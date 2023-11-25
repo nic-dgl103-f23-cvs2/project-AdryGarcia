@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(0, 255, 214)
+    background-color: rgb(17, 17, 17)
 }
 
 body {
@@ -11,30 +11,45 @@ body {
 
   header {
     display: flex;
-    justify-content: space-between;
-    background: rgb(255, 255, 1) 0% no-repeat padding-box;
     width: 100%;
+    justify-content: space-between;
+    background: rgb(0, 0, 0) 0% no-repeat padding-box;
   }
 
-  header img{
+  header img {
     background-color: transparent;
-    width: 300px; 
+    max-width: 100%;
+    /*width: 300px; */
     display: flex;
-    padding-left: 2.0rem;
+    padding-left: 0.5rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    width: 250px;
-    height: 150px;
+    max-width: 40%;
+    height: 80px;
+    /*height: auto;*/
+    /*width: 250px;
+    height: 150px;*/
     margin: 10px 10px;
+  }
+
+  nav {
+    background-color: rgb(0, 0, 0);
+    padding-left: -30px;
   }
 
 .toggle i {
     color: rgb(0, 0, 0);
     font-size:2.0rem;
     /*margin: 50px 30px 30px 0;*/
-    background: rgb(255, 255, 1); 
-    margin-top: 40px;
+    margin: 20px 30px 30px 20px;
+    background-color: rgb(255, 255, 255); 
+   /* margin-top: 40px;
+    margin-right: 2.0rem; */
 } 
+
+.toggle {
+  background-color: #000000;
+}
   
 .login-anchor{
     display: none;
@@ -51,19 +66,18 @@ nav ul {
     margin: 0;
     padding: 0; 
     display: none; 
-    background: rgb(255, 255, 1); 
+    background: rgb(0, 0, 0); 
 }
 
 nav ul li {
-    background: rgb(255, 255, 1); 
+    background: rgb(0, 0, 0); 
     font-size:1.2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: lowercase;
     text-align: center;
     margin-right: 30px;
     padding: 8px 0;
     font-family: 'Ubuntu', sans-serif;
-
   }
 
 .login{ 
@@ -73,13 +87,14 @@ nav ul li {
 
 nav li a{
     text-decoration: none;
-    background-color: rgb(255, 1, 243);
-    color: #FFFFFF;
-    padding: 12px 50px;
+    background-color: rgb(255, 255, 1);
+    color: #000000;
+    padding: 8px 40px;
     border-radius: 5px;
     font-size: 1.2rem;
     box-shadow: 0px 10px 10px black;
-    
+    margin-top: -55px;
+    text-transform: uppercase;
 }
 
 .show-items {
@@ -97,50 +112,74 @@ nav li a{
     color: var(--unnamed-color-a1aeb7);
     text-align: center;
     letter-spacing: 0px;
-    margin-top: 60px;
-    color: rgb(255, 1, 243);
+    max-width: 100%;
+    margin: 25px;
+    /*margin-top: -100px;*/
+    color: rgb(0, 0, 0);
     opacity: 1;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
  }
 
  .hero h1 {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 3.0rem;
     line-height: 48px;
     font-weight: 700;
     margin: 0 42.5px 75px 42.5px;
   }
 
   .hero a {
-    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    background-color: rgb(255, 255, 1);
     text-transform: uppercase;
-    color: rgb(255, 1, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 40px;
     border-radius: 10px;
     font-family: 'Ubuntu', sans-serif;
-    margin-left: 170px;
-    padding-bottom: -100px;
+    margin-left: 100px;
+    padding-bottom: 10px;
     box-shadow: 0px 10px 10px black;
   }
 
-  .plane {
-    padding-top: 50px;
-    max-width: 100%;
-    height: auto;
+  .banner img {
+    max-width: 120%;
+    /*max-width: 50%;*/
+    /*height: auto;
     display: block;
-    margin: auto;
+    margin: auto;*/
+  }
+
+  .banner {
+    height: 100px;
+  }
+
+  .hero {
+    max-width: 100%;
+    padding-top: 50px;
+    margin-left: 18px;
+  }
+
+  .hero h3 {
+    margin-top: -480px;
+    max-width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .background4 {
+    visibility: hidden;
+    /*max-width: 100%;*/
   }
 
    /******Content section******/
 
   .title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     color:rgb(255, 1, 243);
     text-align: center;
-    padding-top: -10px;
+    padding-top: 150px;
   }
