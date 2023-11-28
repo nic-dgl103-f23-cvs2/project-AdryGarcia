@@ -232,7 +232,7 @@ nav li a{
     padding: 20px 10px;
     font-family: 'Ubuntu', sans-serif;
     /*margin-top: 50px;*/
-    /*display: flex;*/ /*CON ESTE SE MODIFICAN LOS CUADROS NEON*/
+    display: block; /*CON ESTE SE MODIFICAN LOS CUADROS NEON*/
     flex-direction: column;
     align-items: center;
     background: transparent;
@@ -297,9 +297,20 @@ nav li a{
   }
 
   .title2 {
-    font-size: 1.5rem;
+    position: relative;
+    /*font-size: 1.7rem;*/
     color: rgb(0, 0, 0);
     text-align: center; 
+    
+
+    font-family: Poppins,sans-serif;
+    font-size: var(--font-size--h3);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: 350%;
+    display: block;
   }
 
   .Tickets img {
@@ -315,6 +326,7 @@ nav li a{
       border-radius: 10px;
       max-width: 100%;
       background: rgba(146, 100, 204);
+      font-family: Lexend Deca,sans-serif;
   }
 
   .text1 {
@@ -459,4 +471,38 @@ nav li a{
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
   
+      /***********Footer***********/
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
     
+      .image {
+          flex: 1; /* Cada imagen ocupará el mismo espacio */
+          margin: 10px;
+          text-align: center;
+      }
+
+      .imagen img {
+        max-height: 100px;
+        /*max-width: 100%; /* La imagen no sobrepasará el ancho de su contenedor */
+        height: auto;
+      }
+
+       
+      .footer1 {
+        display: flex;
+        flex-direction: column; /* Por defecto, en dispositivos móviles, el diseño es vertical */
+        align-items: center;
+        color:#ffffff;
+        font-size: 1.3rem;
+        padding: 10px;
+      }
+
+      .footer1 p {
+        margin: 5px 0;
+      }
