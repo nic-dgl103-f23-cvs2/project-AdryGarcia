@@ -58,6 +58,7 @@ main {
   
 .login-anchor{
     display: none;
+
   }
   
 nav {
@@ -116,6 +117,7 @@ nav li a{
  .H {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
   overflow: hidden;
+  margin-bottom: 0px;
   /*overflow: hidden; /* Evita que los contenidos floten fuera del .H */
  }
 
@@ -165,7 +167,7 @@ nav li a{
     padding-bottom: 10px;
     box-shadow: 0px 10px 10px black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }*/
+  }
 
   .banner img {
     max-width: 100%;
@@ -179,8 +181,8 @@ nav li a{
 
   .colors_mobile {
     position:static; /*se coloco para que no se mueva la imagen de colores y poder diseñar lo de abajo sin que se traslape*/
-    height: 1000px;
-    /*height: auto;*/
+    /*height: 800px; */
+    height: auto;
     /*max-width: 100%;*/
 
     /*height: auto;*/
@@ -226,26 +228,42 @@ nav li a{
    /******Content section (benefits)******/
 
    .content {
+    position:relative;
+    padding: 20px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    /*margin-top: 50px;*/
+    /*display: flex;*/ /*CON ESTE SE MODIFICAN LOS CUADROS NEON*/
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+
+/* revisar si se borra
+    box-sizing: border-box;
     /*position: relative;*/
     max-width: 100%;
-    text-align: center; /* Centra el contenido en dispositivos más pequeños */
+    /*text-align: center; /* Centra el contenido en dispositivos más pequeños */
     /*padding: 20px 10px;*/
     font-family: 'Ubuntu', sans-serif;
-    margin-top: 650px;
+    margin-top: 50px;
     /*display:flex;*/
     /*flex-direction: column;*/
     align-items: center;
     /*background: transparent;*/
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+    flex-wrap: wrap;
+    justify-content: space-around;*/
+    
   }
 
   .content h5 {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
     font-family: 'Ubuntu', sans-serif;
     font-size: 38px;
-    color:#505D68;
+    /*color:rgb(255, 252, 255);*/
     text-align: center;
-    padding-top: 20px;
-  
+    /*padding-top: 20px;*/
+      
     /*max-width: 100%;
     color: rgb(252, 252, 252);
     font-size: 2.2rem;
@@ -254,30 +272,191 @@ nav li a{
     font-family: 'Ubuntu', sans-serif;
     margin: 100px;*/
   }
+
+    .price {
+    /*visibility: hidden;*/
+    background-color: transparent;
+    /*border-radius: 10px;
+    max-width: 100%;*/
+  }
   
   .Tickets {
-
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px; /* Espaciado entre las Tickets */
-    /*margin-bottom: 50px; */
+    position: relative;
+    margin-bottom: 0px; /* Elimina el espacio inferior entre las Tickets en escritorios */
   }
   
   .price img {
-    max-width: 100%;
     height: auto;
-    margin: -10px 50px 10px;
+    margin: 0px 10px 10px;
+    /*display:flex;*/
+    background-color: transparent;
   }
   
-  .text1 {
+  .price p {
     text-align: center;
+  }
+
+  .title2 {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center; 
+  }
+
+  .Tickets img {
+    width: 80px;
+    /*position:relative;*/
+    /*display:flex;*/
+    padding-left: 120px;
+    background-color: transparent;
+  }
+
+  .Tickets1 p {
+    /*background-color: #1e2023;*/
+      border-radius: 10px;
+      max-width: 100%;
+      background: rgba(146, 100, 204);
+  }
+
+  .text1 {
+    position: relative;
+    max-width: 100%;
+    height: 25vh;
+    background:  rgba(146, 100, 204);
+    /*background-color: rgb(151, 138, 81);*/
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    /*box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 0px 40px;
+    /*border-radius: 10px;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
     margin-top: 10px;
   }
 
-  .Tickets {
-    margin-bottom: 0; /* Elimina el espacio inferior entre las Tickets en escritorios */
+  .Tickets2 p {
+    /*background-color: #1e2023;*/
+      border-radius: 10px;
+      max-width: 100%;
+      background: rgb(255, 138, 81)
   }
+
+  .text2 {
+    max-width: 100%;
+    height: 25vh;
+    background-color: rgb(255, 138, 81);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    /*box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 40px;
+    /*border-radius: 10px;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .Tickets3 p {
+    /*background-color: #1e2023;*/
+      border-radius: 10px;
+      max-width: 100%;
+      background: rgb(1, 197, 229);
+  }
+
+  .text3 {
+    max-width: 100%;
+    height: 25vh;
+    background:rgb(1, 197, 229);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    /*box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 40px;
+    /*border-radius: 10px;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .Tickets4 p {
+    /*background-color: #1e2023;*/
+      border-radius: 10px;
+      max-width: 100%;
+      background: rgb(0, 174, 153);
+  }
+
+  .text4 {
+    max-width: 100%;
+    height: 25vh;
+    background: rgb(0, 174, 153);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    /*box-shadow: 2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 40px;
+    /*border-radius: 10px;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+
+  /***********Call to action section***********/
+
+  .accion {  /*****por esto no quedaba el diseño resposive******/
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0px;
+   }
   
-
-
+  .accion h5 {
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-a1aeb7);
+      text-align: center;
+      letter-spacing: 0px;
+      max-width: 100%;
+      margin: 70px;
+      color: rgb(255, 255, 255);
+      opacity: 1;
+      font-size: 1.3rem;
+      font-family: 'Ubuntu', sans-serif;
+      background-image: url();
+      /*border-top: 2px solid rgb(0, 255, 214);*/
+   }
+  
+   .accion p {
+      background: transparent;
+      color: #ffffff;
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 48px;
+      font-weight: 700;
+      margin: 0 42.5px 75px 42.5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      padding-top: 60px;
+    }
+  
+      .accion a {
+      max-width: 100%;
+      display:inline-block;
+      align-items: center; /* Centra verticalmente */
+      justify-content: center; /* Centra horizontalmente */
+      background-color: rgb(255, 255, 1);
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 40px;
+      border-radius: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      padding-bottom: 10px;
+      box-shadow: 0px 10px 10px black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    
