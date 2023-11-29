@@ -117,7 +117,7 @@ nav li a{
  .H {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
   overflow: hidden;
-  margin-bottom: 0px;
+  margin-bottom: auto;
  }
 
 .hero h3 {
@@ -197,6 +197,10 @@ nav li a{
     height: auto;
   }
 
+  .colors_desktop {
+    display: none;
+  }
+
   .banner {
     position:static;
     height: 90px;
@@ -236,27 +240,25 @@ nav li a{
    /******Content section (benefits)******/
 
    .content {
-    /*padding: 20px; /* Añadí padding para separar del borde */
-    /*font-family: 'Ubuntu', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    padding: 20px 10px;
+    font-family: 'Ubuntu', sans-serif;
     background: transparent;
-    max-width: 100%;
-    margin-top: 20px; /* Ajuste para separar del hero */
-
-
-    position:relative;
+    margin-top: 50px;
+    /*position:relative;
     padding: 20px 10px;
     font-family: 'Ubuntu', sans-serif;
     display: block; /*CON ESTE SE MODIFICAN LOS CUADROS NEON*/
-    flex-direction: column;
+    /*flex-direction: column;
     align-items: center;
     background: transparent;
     max-width: 100%;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 50px;
-    align-items: center;
+    align-items: center;*/
   }
 
   .content h5 {
@@ -265,6 +267,8 @@ nav li a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 38px;
     text-align: center;
+    width: 100%;
+    background: transparent;
   }
 
     .price {
@@ -272,7 +276,10 @@ nav li a{
   }
   
   .Tickets {
-    position: relative;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    /*position: relative;
     margin-bottom: 0px; /* Elimina el espacio inferior entre las Tickets en escritorios */
   }
   
@@ -287,7 +294,16 @@ nav li a{
   }
 
   .title2 {
-    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Poppins, sans-serif;
+    font-size: var(--font-size--h3);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: 350%;
+    display: block;
+    /*position: relative;
     color: rgb(0, 0, 0);
     text-align: center; 
     
@@ -299,21 +315,27 @@ nav li a{
     margin-bottom: 0;
     font-weight: 900;
     line-height: 350%;
-    display: block;
+    display: block;*/
   }
 
   .Tickets img {
     width: 80px;
-    padding-left: 120px;
+    margin: 0 auto; /* Centra la imagen */
     background-color: transparent;
+    /*width: 80px;
+    padding-left: 120px;
+    background-color: transparent;*/
   }
 
-  .Tickets1 p {
+  .Tickets1 p {   /*se quito Tickets1*/
+    text-align: center;
       border-radius: 10px;
       max-width: 100%;
       background: rgba(146, 100, 204);
       font-family: Lexend Deca,sans-serif;
+      font-size: 1.2rem;
   }
+
 
   .text1 {
     position: relative;
@@ -390,6 +412,7 @@ nav li a{
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
   }
+
 
 
   /***********Call to action section***********/
@@ -508,3 +531,43 @@ nav li a{
         color: #A1AEB7;
         text-align: center;
        }
+
+      }
+      /******DESKTOP SECTION******/
+      
+      /* Large devices (desktop, 1024px and up) */
+      @media screen and (min-width: 1200px) {  
+
+   /******DESKTOP SECTION******/
+      }
+
+      /* Estilos para dispositivos de escritorio */
+      
+      @media only screen and (min-width: 1024px) {
+
+        /* Nav section */
+
+        nav .toggle {
+            display: none;
+        }
+
+        .navigation-elements ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        .show-items li {
+            margin-right: 60px; 
+        }
+
+        /* Hero section */
+
+        .colors_mobile {
+          display: none;
+        }
+
+        .colors_desktop {
+          display: block;
+          /*height: 400px;*/
+        }
