@@ -24,16 +24,12 @@ main {
   header img {
     background-color: transparent;
     max-width: 100%;
-    /*width: 300px; */
     display: flex;
     padding-left: 2.0rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     max-width: 40%;
     height: 80px;
-    /*height: auto;*/
-    /*width: 250px;
-    height: 150px;*/
     margin: 10px 10px;
   }
 
@@ -45,11 +41,8 @@ main {
 .toggle i {
     color: rgb(0, 0, 0);
     font-size:2.0rem;
-    /*margin: 50px 30px 30px 0;*/
     margin: 20px 30px 30px 20px;
     background-color: rgb(255, 255, 255); 
-   /* margin-top: 40px;
-    margin-right: 2.0rem; */
 } 
 
 .toggle {
@@ -82,7 +75,7 @@ nav ul li {
     text-transform: lowercase;
     text-align: center;
     margin-right: 30px;
-    padding: 8px 0;
+    padding: 10px 0;
     font-family: 'Ubuntu', sans-serif;
   }
 
@@ -96,7 +89,7 @@ nav li a{
     background-color: rgb(255, 255, 1);
     color: #000000;
     padding: 8px 40px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1.2rem;
     box-shadow: 0px 10px 10px black;
     margin-top: -55px;
@@ -112,12 +105,21 @@ nav li a{
      width: 180px;
  }
 
+ a {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ a:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
  /******Hero section******/
 
    .H {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
-  /*overflow: hidden;*/
-  /*margin-bottom: auto;*/
  }
 
 .hero h3 {
@@ -147,40 +149,33 @@ nav li a{
   }
 
     .hero a {
-      /*display: inline-block;
-      align-items: center;
-      justify-content: center;
-      background-color: rgb(255, 255, 1);
-      text-transform: uppercase;
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 1.2rem;
-      padding: 10px 40px;
-      border-radius: 10px;
-      font-family: 'Ubuntu', sans-serif;
-      margin-top: 20px; /* Ajuste para separar del h1 */
-
     max-width: 100%;
     display:inline-block;
-  align-items: center; 
-  justify-content: center; 
+    align-items: center; 
+    justify-content: center; 
     background-color: rgb(255, 255, 1);
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
     box-shadow: 0px 10px 10px black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
- /* .banner img { 
-    max-width: 100%;
-    height: auto;
-}*/
+  a {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition: transform 0.5s ease;
+   }
+  
+   a:hover {
+    background: #b429ff;
+    transform: scale(1.1);
+   }
 
 .banner {
   position:static;
@@ -198,10 +193,6 @@ nav li a{
   }
 
   .hero {
-    /*text-align: center;
-    overflow: hidden;
-    padding: 20px; */
-
     padding-top: 50px;
     display:inline-block;
     background: transparent;
@@ -237,31 +228,6 @@ nav li a{
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
     background: transparent;
-
-    /*position:sticky;
-    display:inline;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    background: transparent;*/
-
-     /*padding: auto;*/
-    /*padding: 50px;*/
-    /*margin-top: 40%;*/
-    /*display: flex;*/
-
-    /*position:relative;
-    padding: 20px 10px;
-    font-family: 'Ubuntu', sans-serif;
-    display: block; /*CON ESTE SE MODIFICAN LOS CUADROS NEON*/
-    /*flex-direction: column;
-    align-items: center;
-    background: transparent;
-    max-width: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 50px;
-    align-items: center;*/
   }
 
   .content h5 {
@@ -276,17 +242,6 @@ nav li a{
     margin-top: 120px;
   }
 
-    /*.price {
-    background-color: transparent;
-  }*/
-  
-  /*.Tickets1 {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-    /*position: relative;
-    margin-bottom: 0px; /* Elimina el espacio inferior entre las Tickets en escritorios */
-
   .title2 {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -299,32 +254,16 @@ nav li a{
     font-weight: 800;
     line-height: 250%;
     display: block;
-    /*position: relative;
-    color: rgb(0, 0, 0);
-    text-align: center; 
-    font-family: Poppins,sans-serif;
-    font-size: var(--font-size--h3);
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 900;
-    line-height: 350%;
-    display: block;*/
   }
 
   .Tickets img {
     width: 80px;
     margin: 0 auto; /* Centra la imagen */
     background-color: transparent;
-    /*width: 80px;
-    padding-left: 120px;
-    background-color: transparent;*/
   }
 
   .Tickets1 p {   /*pertenece al titulo*/
       text-align: center;
-      /*text-align: center;*/
-      /*border-radius: 10px;*/
       max-width: 100%;
       background: rgba(146, 100, 204);
       font-family: Lexend Deca,sans-serif;
@@ -337,13 +276,6 @@ nav li a{
    .contain {
     justify-content: center;
     padding-left: 10px;
-
-    /*padding: 10px 0px 10px;*/
-    /*display: block;*/
-    /*margin-block-start: 1px;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;*/
 }
 
   .text1 {   /*pertenece al texto de cada cuadro*/
@@ -359,20 +291,6 @@ nav li a{
     padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: -10px;
-    
-    /*position: relative;
-    max-width: 100%;
-    height: 25vh;
-    background:  rgba(146, 100, 204);
-    align-items: center; /* Centra verticalmente */
-    /*justify-content: center; /* Centra horizontalmente */
-    /*color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1.0rem;
-    padding: 10px 40px;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: -10px;
-    margin-top: 10px;*/
   }
 
   .Tickets2 p {
@@ -396,10 +314,6 @@ nav li a{
     padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
-
-    /*position: relative;*/
-    
-    /*margin-top: 10px;*/
   }
 
   .Tickets3 p {
@@ -467,17 +381,17 @@ nav li a{
   font-size: 1.0rem;
 }
 
-.video-container {
+/*.video-container {
   position: relative;
   max-width: 100%;
   padding-bottom: 56.25%; 
-}
+}*/
 
-video {
+/*video {
   width: 100%;
   height: auto;
   display: block;
-}
+}*/
 
   /***********Call to action section***********/
 
@@ -499,7 +413,6 @@ video {
       font-size: 1.3rem;
       font-family: 'Ubuntu', sans-serif;
       background-image: url();
-      /*border-top: 2px solid rgb(0, 255, 214);*/
    }
   
    .accion p {
@@ -531,7 +444,16 @@ video {
       box-shadow: 0px 10px 10px black;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       margin:20px;
+      transition-duration: 0.25s;
+      transition-timing-function: linear;
+      transition: transform 0.5s ease;
     }
+    
+     a:hover {
+      background: #b429ff;
+      transform: scale(1.1);
+     }
+
   
       /***********Footer***********/
 
@@ -540,13 +462,15 @@ video {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        height: 100vh;
-        padding: 15px;
+        min-height: 100vh;
+        padding: 10px;
+        margin:80px 0;
       }
     
       .image {
           flex: 1; /* Cada imagen ocupará el mismo espacio */
-          margin: 10px;
+          margin: 40px;
+          /*margin: 80px;*/
           text-align: center;
       }
 
@@ -649,7 +573,7 @@ video {
     }
   
     .hero a {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       /*margin-top: 70px;*/
     }
 
