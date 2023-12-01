@@ -16,9 +16,7 @@ main {
 
   header {
     display: flex;
-    /*width: 100%;*/
     justify-content: space-between;
-    /*background: rgb(0, 0, 0) 0% no-repeat padding-box;*/
   }
 
   header img {
@@ -38,15 +36,9 @@ main {
     text-align: right;
    }
 
-  /*nav {
-    background-color: rgb(0, 0, 0);
-    padding-left: -30px;
-  }*/
-
 .toggle i {
     color: rgb(0, 0, 0);
     font-size:2.0rem;
-    /*margin: 20px 30px 30px 120px;*/
     margin: 20px 30px 30px 0;
     background-color: rgb(255, 255, 255); 
 } 
@@ -58,31 +50,21 @@ main {
 .login-anchor {
     display: none;
   }
-  
-  /*nav {
-    /*padding-top: 30px;
-    /*padding-right: 50px;*/
-   /* text-align: right;
-   }*/
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0; 
     display: none; 
-    /*background: rgb(0, 0, 0); */
 }
 
 nav ul li {
-    /*background: rgb(0, 0, 0); */
     font-size:1.2rem;
     color: rgb(255, 255, 255);
     text-transform: lowercase;
     text-align: center;
     margin-right: 30px;
     padding: 8px 0;
-    /*margin-right: 30px;*/
-    /*padding: 8px 0;*/
     font-family: 'Ubuntu', sans-serif;
     transition: color 0.3s ease; 
   }
@@ -103,30 +85,19 @@ nav ul li {
 
 nav li a {
     text-decoration: none;
-    /*background-color: rgb(255, 255, 1);
-    color: #000000;
-    padding: 8px 40px;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    box-shadow: 0px 10px 10px black;
-    margin-top: -55px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
     display: inline-block; 
-
     text-decoration: none; /***todo esto pertenece al boton del menu login**/
-    background-color: rgb(255, 255, 1);
+   /* background-color: rgb(255, 255, 1);
     color: #000000;
     padding: 5px 27px;
     border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 1.2rem; */
 }
 
 .show-items {
      display: flex;
      flex-direction: column;
      align-items: flex-end;
-     /*margin-bottom: 15px;*/
      margin-bottom: 10px;
      /*width: 180px;*/ /*este width era el problema en el nav*/
  }
@@ -291,7 +262,7 @@ nav li a {
   .Tickets1 p {   /*pertenece al titulo*/
       text-align: center;
       max-width: 100%;
-      background: rgba(146, 100, 204);
+      background: rgba(147, 100, 204);
       font-family: Lexend Deca,sans-serif;
       font-size: 1.2rem;
       margin: 0px;
@@ -308,7 +279,7 @@ nav li a {
     max-width: 100%;
     width: 350px;
     /*height: 25vh;*/
-    background:  rgba(146, 100, 204);
+    background:  rgb(147, 100, 204);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     color: rgb(0, 0, 0);
@@ -551,8 +522,189 @@ nav li a {
         text-align: center;
        }
 
+       /*** Ticket Section MOBILE (2ND PAGE) ***/ 
+
+  /*Nav section*/
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    background-color: transparent;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    max-width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+  }
+
+  nav {
+    padding-top: 30px;
+    text-align: right;
+   }
+
+.toggle i {
+    color: rgb(0, 0, 0);
+    font-size:2.0rem;
+    margin: 20px 30px 30px 0;
+    background-color: rgb(255, 255, 255); 
+} 
+
+.toggle {
+  background-color: transparent;
+}
+  
+.login-anchor {
+    display: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+
+nav ul li {
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color 0.3s ease; 
+  }
+
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
+    margin-top: 10px;
+    visibility: hidden;
+}  
+   
+
+nav li a {
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+}
+
+.show-items {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-bottom: 10px;
+     /*width: 180px;*/ /*este width era el problema en el nav*/
+ }
+
+ .log-in {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ .log-in:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
+/**********Hero section (video)***********/
+
+ .banner-video {
+  width: 100%;
+  height: 300px;
+  object-fit:fill;
+  object-fit: cover;
+}
+
+.videohero {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+/**** Content section ****/
+
+.date h4 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 1);
+  margin-top: 20px;
+  padding: -5px;
+}
+
+.date h5 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 1);
+  margin-top: -120px;
+}
+
+/*****call to action section*****/
+
+table {
+	  border: 2px solid yellow;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    overflow:hidden;
+    margin:auto;
+    width: 80%;
+    /*Estilos para tabla responsiva*/
+    max-width: 100%;
+    display:flex;
+    color: #ffcc00;
+    font-size: 15px;
+}
+
+table tr td {
+  border-bottom: 1px solid #ffcc00;
+  padding: 10px; /* Ajusta según tus necesidades */
+  /*text-decoration: none;*/
+  /*background-color: #424B5A; /***ESTE TAMBIEN ES AZUL, REVISAR***/
+  color: #FFFFFF;
+  /*padding: 12px 50px;
+  border-radius: 5px;
+  font-size: 1.2rem;*/
+}
+
+/*table td {
+  background-color: #424B5A;
+}*/
+
+.Purchase_button a {
+  visibility: hidden;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
       
-      /******DESKTOP SECTION******/
+      /******  /****** /**** DESKTOP SECTION ******/ *****/ ****/
       
       /* Large devices (desktop, 1024px and up) */
       @media screen and (min-width: 1200px) {  
@@ -619,7 +771,6 @@ nav li a {
       max-width: 45%; /* Ajusta el ancho máximo según tus necesidades */
     }
 
-
     /*****Call to acction section******/
 
 .accion h5 {
@@ -636,6 +787,154 @@ nav li a {
     font-size: 1.6rem;
   }
 
-  /*** PAGE 2 TICKET SALES (MOVIL) ***/
+  /*** ***** ******  TICKET SALES (MOVIL) 2ND PAGE **** ***** ****/
 
   /*Nav section*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    background-color: transparent;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    max-width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+  }
+
+  nav {
+    padding-top: 30px;
+    text-align: right;
+   }
+
+.toggle i {
+    color: rgb(0, 0, 0);
+    font-size:2.0rem;
+    margin: 20px 30px 30px 0;
+    background-color: rgb(255, 255, 255); 
+} 
+
+.toggle {
+  background-color: transparent;
+}
+  
+.login-anchor {
+    display: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+
+nav ul li {
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color 0.3s ease; 
+  }
+
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
+    margin-top: 10px;
+    visibility: hidden;
+}  
+   
+
+nav li a {
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+}
+
+.show-items {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-bottom: 10px;
+     /*width: 180px;*/ /*este width era el problema en el nav*/
+ }
+
+ .log-in {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ .log-in:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
+/**********Hero section (video)***********/
+
+ .banner-video {
+  width: 100%;
+  height: 300px;
+  object-fit:fill;
+  object-fit: cover;
+}
+
+.videohero {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+/**** Content section ****/
+
+.date h4 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 1);
+  margin-top: 20px;
+  padding: -5px;
+}
+
+.date h5 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 1);
+  margin-top: -120px;
+}
+
+/*****call to action section*****/
+
+table {
+	border: 2px solid yellow;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    overflow:hidden;
+    margin:auto;
+    width: 80%;
+    /*Estilos para tabla responsiva*/
+    max-width: 100%;
+    display: block;
+}
