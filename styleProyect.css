@@ -26,7 +26,7 @@ main {
     max-width: 100%;
     /*width: 300px; */
     display: flex;
-    padding-left: 0.5rem;
+    padding-left: 2.0rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     max-width: 40%;
@@ -177,10 +177,10 @@ nav li a{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .banner img {
+ /* .banner img { 
     max-width: 100%;
     height: auto;
-}
+}*/
 
 .banner {
   position:static;
@@ -231,17 +231,25 @@ nav li a{
    /******Content section (benefits)******/
 
    .content {
-    position:sticky;
-    display: inline;
-    /*display: flex;*/
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /*padding: auto;*/
-    /*padding: 50px;*/
     font-family: 'Ubuntu', sans-serif;
     background: transparent;
+
+    /*position:sticky;
+    display:inline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;*/
+
+     /*padding: auto;*/
+    /*padding: 50px;*/
     /*margin-top: 40%;*/
+    /*display: flex;*/
 
     /*position:relative;
     padding: 20px 10px;
@@ -263,8 +271,8 @@ nav li a{
     font-size: 38px;
     text-align: center;
     width: 100%;
-    background: transparent;
-    padding: 80px 10px;
+    /*background: transparent;*/
+    padding: 50px 10px;
     margin-top: 120px;
   }
 
@@ -280,14 +288,16 @@ nav li a{
     margin-bottom: 0px; /* Elimina el espacio inferior entre las Tickets en escritorios */
 
   .title2 {
+    text-align: center;
     color: rgb(0, 0, 0);
     font-family: Poppins, sans-serif;
     font-size: var(--font-size--h3);
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 900;
-    line-height: 350%;
+    margin: 10px 0px 0px 50px;
+    font-weight: 800;
+    line-height: 250%;
     display: block;
     /*position: relative;
     color: rgb(0, 0, 0);
@@ -313,23 +323,40 @@ nav li a{
 
   .Tickets1 p {   /*pertenece al titulo*/
       text-align: center;
+      /*text-align: center;*/
       /*border-radius: 10px;*/
       max-width: 100%;
       background: rgba(146, 100, 204);
       font-family: Lexend Deca,sans-serif;
       font-size: 1.2rem;
+      margin: 0px;
+      padding: 0px;
+      /*padding-left: 0px; */
   }
+
+   .contain {
+    justify-content: center;
+    padding-left: 10px;
+
+    /*padding: 10px 0px 10px;*/
+    /*display: block;*/
+    /*margin-block-start: 1px;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;*/
+}
 
   .text1 {   /*pertenece al texto de cada cuadro*/
     max-width: 100%;
-    height: 25vh;
+    width: 350px;
+    /*height: 25vh;*/
     background:  rgba(146, 100, 204);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.0rem;
-    padding: 10px 40px;
+    padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: -10px;
     
@@ -359,14 +386,14 @@ nav li a{
 
   .text2 {
     max-width: 100%;
-    height: 25vh;
+    /*height: 25vh;*/
     background-color: rgb(255, 138, 81);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.0rem;
-    padding: 10px 40px;
+    padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
 
@@ -386,14 +413,14 @@ nav li a{
 
   .text3 {
     max-width: 100%;
-    height: 25vh;
+    /*height: 25vh;*/
     background:rgb(1, 197, 229);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.0rem;
-    padding: 10px 40px;
+    padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
   }
@@ -409,19 +436,48 @@ nav li a{
 
   .text4 {
     max-width: 100%;
-    height: 25vh;
+    /*height: 25vh;*/
     background: rgb(0, 174, 153);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.0rem;
-    padding: 10px 40px;
+    padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 10px;
   }
 
+.Tickets1,
+.Tickets2,
+.Tickets3,
+.Tickets4 {
+    flex: 1;
+    margin: 0px;
+    text-align:justify;
+    max-width: 100%; /* Ajustar el ancho máximo */
+}
 
+.text1,
+.text2,
+.text3,
+.text4 {
+  width: auto;
+  height: 300px;
+  font-size: 1.0rem;
+}
+
+.video-container {
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 56.25%; 
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
   /***********Call to action section***********/
 
@@ -469,11 +525,12 @@ nav li a{
       text-decoration: none;
       font-size: 1.2rem;
       padding: 10px 40px;
-      border-radius: 10px;
+      border-radius: 50px;
       font-family: 'Ubuntu', sans-serif;
       padding-bottom: 10px;
       box-shadow: 0px 10px 10px black;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin:20px;
     }
   
       /***********Footer***********/
@@ -495,15 +552,15 @@ nav li a{
 
       .imagen img {
         max-height: 100px;
-    width: auto;
+        width: auto;
         /*max-width: 100%; /* La imagen no sobrepasará el ancho de su contenedor */
         height: auto;
       }
 
       .footer1 {
         display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
         color:#ffffff;
         font-size: 1.5rem;
@@ -512,8 +569,8 @@ nav li a{
 
       .footer1 p {
         flex: 1 0 auto;
-    margin: 10px;
-    text-align: center;
+        margin: 10px;
+        text-align: center;
       }
 
       .container2 {
@@ -540,7 +597,7 @@ nav li a{
         text-align: center;
        }
 
-      }
+      
       /******DESKTOP SECTION******/
       
       /* Large devices (desktop, 1024px and up) */
@@ -582,7 +639,7 @@ nav li a{
 
         .hero h3 {
           font-size: 2.5rem; 
-          margin-top: -350px;
+          margin-top: -300px;
         }
   
     .hero h1 {
@@ -597,3 +654,39 @@ nav li a{
     }
 
     /*****Content section*****/
+
+    .content {
+      flex-direction:row;
+      align-items: center; 
+    }
+
+    .Tickets1,
+    .Tickets2,
+    .Tickets3,
+    .Tickets4 {
+      flex: 1;
+      max-width: 45%; /* Ajusta el ancho máximo según tus necesidades */
+    }
+
+
+    /*****Call to acction section******/
+
+/*.accion {  /*****por esto no quedaba el diseño resposive******/
+  /*text-align: center;
+  overflow: hidden;
+  margin-bottom: 0px;
+ }*/
+
+.accion h5 {
+    font-size: 1.8rem;
+    padding-top: 150px;
+ }
+
+ .accion p {
+    font-size: 3.2rem;
+    padding-top: 90px;
+  }
+
+    .accion a {
+    font-size: 1.6rem;
+  }
