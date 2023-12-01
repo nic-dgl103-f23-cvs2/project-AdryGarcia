@@ -16,9 +16,9 @@ main {
 
   header {
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     justify-content: space-between;
-    background: rgb(0, 0, 0) 0% no-repeat padding-box;
+    /*background: rgb(0, 0, 0) 0% no-repeat padding-box;*/
   }
 
   header img {
@@ -34,59 +34,76 @@ main {
   }
 
   nav {
+    padding-top: 30px;
+    text-align: right;
+   }
+
+  /*nav {
     background-color: rgb(0, 0, 0);
     padding-left: -30px;
-  }
+  }*/
 
 .toggle i {
     color: rgb(0, 0, 0);
     font-size:2.0rem;
-    margin: 20px 30px 30px 20px;
+    /*margin: 20px 30px 30px 120px;*/
+    margin: 20px 30px 30px 0;
     background-color: rgb(255, 255, 255); 
 } 
 
 .toggle {
-  background-color: #000000;
+  background-color: transparent;
 }
   
-.login-anchor{
+.login-anchor {
     display: none;
-
   }
   
-nav {
-    padding-top: 30px;
-    padding-right: 20px;
-    text-align: right;
-   }
+  /*nav {
+    /*padding-top: 30px;
+    /*padding-right: 50px;*/
+   /* text-align: right;
+   }*/
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0; 
     display: none; 
-    background: rgb(0, 0, 0); 
+    /*background: rgb(0, 0, 0); */
 }
 
 nav ul li {
-    background: rgb(0, 0, 0); 
+    /*background: rgb(0, 0, 0); */
     font-size:1.2rem;
     color: rgb(255, 255, 255);
     text-transform: lowercase;
     text-align: center;
     margin-right: 30px;
-    padding: 10px 0;
+    padding: 8px 0;
+    /*margin-right: 30px;*/
+    /*padding: 8px 0;*/
     font-family: 'Ubuntu', sans-serif;
+    transition: color 0.3s ease; 
   }
 
-.login{ 
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
     margin-top: 10px;
+    visibility: hidden;
 }  
    
 
-nav li a{
+nav li a {
     text-decoration: none;
-    background-color: rgb(255, 255, 1);
+    /*background-color: rgb(255, 255, 1);
     color: #000000;
     padding: 8px 40px;
     border-radius: 20px;
@@ -94,24 +111,33 @@ nav li a{
     box-shadow: 0px 10px 10px black;
     margin-top: -55px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+    display: inline-block; 
+
+    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+    background-color: rgb(255, 255, 1);
+    color: #000000;
+    padding: 5px 27px;
+    border-radius: 25px;
+    font-size: 1.2rem;
 }
 
 .show-items {
      display: flex;
      flex-direction: column;
      align-items: flex-end;
-     margin-bottom: 15px;
-     width: 180px;
+     /*margin-bottom: 15px;*/
+     margin-bottom: 10px;
+     /*width: 180px;*/ /*este width era el problema en el nav*/
  }
 
- a {
+ .log-in {
   transition-duration: 0.25s;
   transition-timing-function: linear;
   transition: transform 0.5s ease;
  }
 
- a:hover {
+ .log-in:hover {
   background: #b429ff;
   transform: scale(1.1);
  }
@@ -470,7 +496,6 @@ nav li a{
       .image {
           flex: 1; /* Cada imagen ocupará el mismo espacio */
           margin: 40px;
-          /*margin: 80px;*/
           text-align: center;
       }
 
@@ -495,6 +520,11 @@ nav li a{
         flex: 1 0 auto;
         margin: 10px;
         text-align: center;
+        transition: color 0.3s ease; 
+      }
+
+      .footer1 p:hover {
+        color: #ffcc00; 
       }
 
       .container2 {
@@ -558,7 +588,6 @@ nav li a{
 
         .colors_desktop {
           display: block;
-          /*height: 400px;*/
         }
 
         .hero h3 {
@@ -569,12 +598,10 @@ nav li a{
     .hero h1 {
       font-size: 3.9rem; 
       line-height: 0.95;
-      /*margin-top: 70px;*/
     }
   
     .hero a {
       font-size: 1.5rem;
-      /*margin-top: 70px;*/
     }
 
     /*****Content section*****/
@@ -595,12 +622,6 @@ nav li a{
 
     /*****Call to acction section******/
 
-/*.accion {  /*****por esto no quedaba el diseño resposive******/
-  /*text-align: center;
-  overflow: hidden;
-  margin-bottom: 0px;
- }*/
-
 .accion h5 {
     font-size: 1.8rem;
     padding-top: 150px;
@@ -614,3 +635,7 @@ nav li a{
     .accion a {
     font-size: 1.6rem;
   }
+
+  /*** PAGE 2 TICKET SALES (MOVIL) ***/
+
+  /*Nav section*/
