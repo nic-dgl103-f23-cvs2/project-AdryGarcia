@@ -378,18 +378,6 @@ nav li a {
   font-size: 1.0rem;
 }
 
-/*.video-container {
-  position: relative;
-  max-width: 100%;
-  padding-bottom: 56.25%; 
-}*/
-
-/*video {
-  width: 100%;
-  height: auto;
-  display: block;
-}*/
-
   /***********Call to action section***********/
 
   .accion {  /*****por esto no quedaba el diseño resposive******/
@@ -522,10 +510,11 @@ nav li a {
         text-align: center;
        }
 
-       /*** Ticket Section MOBILE (2ND PAGE) ***/ 
+       /*************** INICIO PAGINA 2 ****************/
 
-  /*Nav section*/
+       /*** *** Ticket Section MOBILE (2ND PAGE) *** ***/ 
 
+  /*Nav section MOBILE (tickets)*/
 
   header {
     display: flex;
@@ -547,6 +536,7 @@ nav li a {
   nav {
     padding-top: 30px;
     text-align: right;
+    
    }
 
 .toggle i {
@@ -574,12 +564,13 @@ nav ul {
 nav ul li {
     font-size:1.2rem;
     color: rgb(255, 255, 255);
-    text-transform: lowercase;
+    text-transform: uppercase;
     text-align: center;
     margin-right: 30px;
     padding: 8px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: futura-pt, sans-serif;
     transition: color 0.3s ease; 
+
   }
 
   li {
@@ -603,7 +594,8 @@ nav li a {
 }
 
 .show-items {
-     display: flex;
+  display: inline-flex;
+     /*display: flex;*/
      flex-direction: column;
      align-items: flex-end;
      margin-bottom: 10px;
@@ -621,7 +613,7 @@ nav li a {
   transform: scale(1.1);
  }
 
-/**********Hero section (video)***********/
+/**********Hero section MOBILE (video) tickets ***********/
 
  .banner-video {
   width: 100%;
@@ -638,37 +630,50 @@ nav li a {
   height: 350px;
 }
 
-/**** Content section ****/
+/**** Content section MOBILE (tickets) ****/
 
 .date h4 {
   font-family: 'Bungee', sans-serif;
-  font-size: 5.5rem;
+  font-size: 5.5rem; 
   text-align: center;
   text-transform: uppercase;
-  color:rgb(255, 255, 1);
+  color:rgb(114, 212, 74);
   margin-top: 20px;
   padding: -5px;
 }
 
 .date h5 {
   font-family: 'Bungee', sans-serif;
-  font-size: 3rem;
+  font-size: 3rem; 
   text-align: center;
   text-transform: uppercase;
-  color:rgb(255, 255, 1);
+  color:rgb(114, 212, 74);
   margin-top: -120px;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
 }
 
-/*****call to action section*****/
+.date h6 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 3.3rem; 
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  margin-top: -30px;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 800;
+}
+
+/*****call to action- MOBILE (tickets)*****/
 
 table {
 	  border: 2px solid yellow;
     font-family: futura-pt, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     border-radius: 15px;
     overflow:hidden;
-    margin:auto;
+    /*margin:auto;*/
+    margin-top: -50px;
     width: 80%;
     /*Estilos para tabla responsiva*/
     max-width: 100%;
@@ -678,7 +683,7 @@ table {
 }
 
 table tr td {
-  border-bottom: 1px solid #ffcc00;
+  border-bottom: 2px solid #ffcc00;
   padding: 10px; /* Ajusta según tus necesidades */
   /*text-decoration: none;*/
   /*background-color: #424B5A; /***ESTE TAMBIEN ES AZUL, REVISAR***/
@@ -688,23 +693,133 @@ table tr td {
   font-size: 1.2rem;*/
 }
 
-/*table td {
-  background-color: #424B5A;
-}*/
+.button a {
+display: inline-flex;
+margin: 8px;
+background: #ffcc00;
+padding: 10px 35px;
+border-radius: 20px;
+text-decoration: none;
+font-size: 1.2rem;
+text-transform: uppercase;
+font-family: futura-pt, sans-serif;
+}
 
-.Purchase_button a {
-  visibility: hidden;
-  background-color: #ffcc00;
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  /*width: 180px;*/ /*este width era el problema en el nav*/
+}
+
+/* .button a {  /*PARA CONFIGURAR EL BOTON DEL NAV LOG IN*/
+ /*  background-color: #ffcc00;
   color: #000;
-  padding: 10px 20px;
+  padding: 8px 15px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  /*cursor: pointer;*/
+/*
+ max-width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 1);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+
+.purchase-button {
+  /* Estilos específicos para el botón de Purchase */
+  background-color: #b429ff; /* Puedes ajustar el color según tus preferencias */
+  color:#04ff00; /* Color del texto */
+  padding: 12px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  /*transition: transform 0.5s ease;*/
+}
+
+ .purchase-button:hover {
+  background: rgb(0, 255, 214);
+  transform: scale(1.1);
+  color:blue;
+  font-weight: 700;
+  transition: transform 0.5s ease;
+ }
+
+ /*****Footer MOVIL (tickets) *****/
+
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin:80px 0;
+}
+
+.footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.0rem;
+  padding: 55px;
+}
+
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 10px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+.footer1 p:hover {
+  color: #ffcc00; 
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 0.7rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+ footer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 60px auto;
+  padding: 5px;
+}
+
+footer img {
+  width: 30%; /* Ajusta según sea necesario para dispositivos móviles */
+  margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
 }
 
       
-      /******  /****** /**** DESKTOP SECTION ******/ *****/ ****/
+      /******  /****** /**** DESKTOP SECTION 2ND PAGE ******/ *****/ ****/
       
       /* Large devices (desktop, 1024px and up) */
       @media screen and (min-width: 1200px) {  
@@ -730,6 +845,12 @@ table tr td {
 
         .show-items li {
             margin-right: 60px; 
+        }
+
+        nav {
+          padding-top: 40px;
+          text-align: right;
+          display: inline-flex;
         }
 
         /******Hero section******/  
@@ -770,6 +891,7 @@ table tr td {
       flex: 1;
       max-width: 45%; /* Ajusta el ancho máximo según tus necesidades */
     }
+
 
     /*****Call to acction section******/
 
@@ -906,21 +1028,26 @@ nav li a {
 
 .date h4 {
   font-family: 'Bungee', sans-serif;
-  font-size: 5.5rem;
+  font-size: 6.5rem; /* antes 5.5rem*/
   text-align: center;
   text-transform: uppercase;
-  color:rgb(255, 255, 1);
+  color:rgb(255, 1, 243);
   margin-top: 20px;
   padding: -5px;
 }
 
 .date h5 {
   font-family: 'Bungee', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem; /* antes 3rem*/
   text-align: center;
   text-transform: uppercase;
-  color:rgb(255, 255, 1);
+  color:rgb(255, 1, 243);
   margin-top: -120px;
+}
+
+.date h6 {
+  font-size: 4rem;
+  margin-top: -50px;
 }
 
 /*****call to action section*****/
@@ -937,4 +1064,82 @@ table {
     /*Estilos para tabla responsiva*/
     max-width: 100%;
     display: block;
+}
+
+
+/*********** Footer ***********/
+
+.container {
+  /*margin-bottom: 80px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin:80px 0;
+}
+
+.footer1 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.5rem;
+  padding: 30px; /*antes 150*/
+  padding-bottom: 45px; /*antes 45px*/
+  margin-bottom: -83px; /*antes 80px*/
+}
+
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 40px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+.footer1 p:hover {
+  color: #ffcc00; 
+}
+
+.container2 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:rgb(146, 100, 204);
+  font-size: 1.8rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 110%;
+  padding: 15px;
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 1.2rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+ footer img {
+  width: 100%;
+  max-width: 200px;
+  /*height: auto;
+  display: block;*/
+  /*margin: 0;*/
+  /*float: left;*/
+  /*margin-right: 10px;*/
+  /*padding: 5px;*/
+}
+
+  /*footer img {
+  width: 30%; /* Ajusta según sea necesario para dispositivos móviles */
+  /*margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
 }
