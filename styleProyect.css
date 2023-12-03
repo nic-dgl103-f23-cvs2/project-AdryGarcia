@@ -12,7 +12,7 @@ main {
   overflow: hidden; /* Evita que los contenidos floten fuera del main */
 }
 
-/******nav section******/
+/******nav section (mobile)******/
 
   header {
     display: flex;
@@ -113,7 +113,7 @@ nav li a {
   transform: scale(1.1);
  }
 
- /******Hero section******/
+ /******Hero section (mobile)******/
 
    .H {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
@@ -216,7 +216,7 @@ nav li a {
     visibility: hidden;
   }
 
-   /******Content section (benefits)******/
+   /******Content section (mobile)******/
 
    .content {
     display: inline-flex;
@@ -378,7 +378,7 @@ nav li a {
   font-size: 1.0rem;
 }
 
-  /***********Call to action section***********/
+  /***********Call to action section (mobile)***********/
 
   .accion {  /*****por esto no quedaba el diseño resposive******/
     text-align: center;
@@ -440,16 +440,16 @@ nav li a {
      }
 
   
-      /***********Footer***********/
+      /***********Footer (mobile)***********/
 
       .container {
-        display: flex;
+        /*display: flex;*/
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         min-height: 100vh;
         padding: 10px;
-        margin:80px 0;
+        margin:-60px 0px 0px;
       }
     
       .image {
@@ -458,7 +458,7 @@ nav li a {
           text-align: center;
       }
 
-      .imagen img {
+      .image img {
         max-height: 100px;
         width: auto;
         /*max-width: 100%; /* La imagen no sobrepasará el ancho de su contenedor */
@@ -508,6 +508,15 @@ nav li a {
         font-size: 1.2rem;
         color: #A1AEB7;
         text-align: center;
+       }
+
+       footer img {
+        margin-bottom: 0;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        /*margin: -200px auto;
+        padding: 93px; */
        }
 
        /*************** INICIO PAGINA 2 ****************/
@@ -771,8 +780,9 @@ font-family: futura-pt, sans-serif;
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  padding: 10px;
+  padding: 15px;
   margin:80px 0;
+  font-size: 0.9rem;
 }
 
 .footer1 {
@@ -782,7 +792,7 @@ font-family: futura-pt, sans-serif;
   align-items: center;
   color:#ffffff;
   font-size: 1.0rem;
-  padding: 55px;
+  padding: 0px;
 }
 
 .footer1 p {
@@ -800,9 +810,10 @@ font-family: futura-pt, sans-serif;
   border-top: 1px solid #C2D1D9;
   padding-top: 10px;
   font-family: 'Ubuntu', sans-serif;;
-  font-size: 0.7rem;
+  font-size: 1.0rem;
   color: #A1AEB7;
   text-align: center;
+  font-weight: 900px;
  }
 
  footer img {
@@ -813,8 +824,14 @@ font-family: futura-pt, sans-serif;
   padding: 5px;
 }
 
+.image img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
 footer img {
-  width: 30%; /* Ajusta según sea necesario para dispositivos móviles */
+  width: 80%; /* Ajusta según sea necesario para dispositivos móviles */
   margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
 }
 
@@ -1142,4 +1159,57 @@ table {
   /*footer img {
   width: 30%; /* Ajusta según sea necesario para dispositivos móviles */
   /*margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
+}
+
+
+/*************** INICIO PAGINA 3 (CAMPING) ****************/
+
+.date {
+  margin-bottom: 30px;
+}
+
+.date h4 {
+  color: #505D68;
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.Camp_desktop {
+  display: none;
+ /* color: #505D68;
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700; */   /*this is for desktop*/
+}
+
+.camp2 {
+  display: none;
+}
+
+.camping_images img {
+  width: 365px;
+  height: 290px;
+  margin-left: -70px;
+}
+
+.feature-boxes, .features-row {
+  margin: 0 20px;  
+}
+
+.features-boxes{
+  border-bottom:2px solid #F2F5F7;
+}
+
+.features-boxes h3 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #505D68;
+}
+
+.feature-boxes p {
+  font-size: 1.4rem;
+  color: #A1AEB7;
+  padding: 0px 40px 15px 0px;
+  line-height: 21px;
 }
