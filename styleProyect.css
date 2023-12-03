@@ -1164,6 +1164,8 @@ table {
 
 /*************** INICIO PAGINA 3 (CAMPING) ****************/
 
+/* * * * * * * Content section (Mobile)* * * * * */
+
 .date {
   margin-bottom: 30px;
 }
@@ -1207,9 +1209,72 @@ table {
     color: #505D68;
 }
 
-.feature-boxes p {
+.features-boxes p {
   font-size: 1.4rem;
   color: #A1AEB7;
   padding: 0px 40px 15px 0px;
   line-height: 21px;
 }
+
+/* * * * * *  Call to acction section (Mobile)* * * * * */
+
+.accion {  /*****por esto no quedaba el diseño resposive******/
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 0px;
+ }
+
+.accion h5 {
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-a1aeb7);
+    text-align: center;
+    letter-spacing: 0px;
+    max-width: 100%;
+    margin: 70px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url();
+ }
+
+ .accion p {
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0 42.5px 75px 42.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+  }
+
+    .accion a {
+    max-width: 100%;
+    display:inline-block;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: rgb(255, 255, 1);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin:20px;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition: transform 0.5s ease;
+  }
+  
+   a:hover {
+    background: #b429ff;
+    transform: scale(1.1);
+   }
+
+ /* * * * * * * Footer section (Mobile) * * * * * */
