@@ -33,7 +33,7 @@ main {
   }
 
   nav {
-    padding-top: 30px;
+    padding-top: 45px; /* antes 30px*/
     text-align: right;
    }
 
@@ -109,6 +109,8 @@ nav li a {
   transform: scale(1.1);
  }
 
+
+
  /*Hero (mobile) home page*/
 
    .H {  /*por esto no quedaba el diseño resposive*/
@@ -175,11 +177,9 @@ nav li a {
   height: 90px;
 }  
 
-  .colors_mobile {
-    max-width: 100%;
-    position:static; /*se coloco para que no se mueva la imagen de colores y poder diseñar lo de abajo sin que se traslape*/
-    height: auto;
-  }
+.banner img {
+max-width: 100%;
+}
 
   .colors_desktop {
     display: none;
@@ -365,6 +365,8 @@ nav li a {
   font-size: 1.0rem;
 }
 
+
+
   /*Call to action (mobile) home pague*/
 
   .accion {  /*por esto no quedaba el diseño resposive*/
@@ -379,7 +381,7 @@ nav li a {
       text-align: center;
       letter-spacing: 0px;
       max-width: 100%;
-      margin: 70px;
+      margin: 60px; 
       color: rgb(255, 255, 255);
       opacity: 1;
       font-size: 1.3rem;
@@ -432,47 +434,117 @@ nav li a {
         width: 100%;
         max-width: 100%;
       }
-   
 
-      /* footer desktop (home page) */ 
+        
+  .subscribe-section {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color:rgb(114, 212, 74);
+    font-size: 2.0rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #555555;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+  }
+  
+  button {
+    background-color: #f4ee42;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Poppins, sans-serif;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: #a73cd8;
+    color:cyan;
+  }
+
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: -30px;
+
+
+      /* Desktop (home page) */     /****PENDIENTE****/
       
       /* Large devices (desktop, 1024px and up) */
       @media screen and (min-width: 768px) {  
+        
+        /* Hero section */
 
-       /* .container {
-          display: flex;
-          flex-wrap: wrap;
+        .banner img {
+          max-width: 120%;
+        }
+
+        .content h5 {
+          background: transparent;
+          color: #ffffff;
+          text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 38px;
+          text-align: center;
+          width: 100%;
+          padding: 50px 10px;
+          margin-top: 724px;
+      }
+
+      .hero {
+        padding: 0px;
+        margin-bottom: -103px;
+    }
+
+      /* footer desktop (home page) */ 
+        .footer1 p {
+          flex: 1 0 auto;
+          margin: 10px;
+          text-align: center;
+          transition: color 0.3s ease; 
+        }
+
+        .container {
+          /*flex-wrap: wrap;*/
+          display: grid;
           justify-content: space-around;
           align-items: center;
           min-height: 100vh;
           padding: 10px;
           margin:80px 0;
+          grid-template-columns: repeat(3, 1fr);
+          /*grid-gap: 10px;
+          margin-left: -30px;*/
         }
-        
-        .footer1 {
-          font-family: Poppins,sans-serif;
-          display: grid;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          align-items: center;
-          color:#ffffff;
-          font-size: 1.5rem;
-          padding: 30px; /*antes 150*/
-          padding-bottom: 45px; /*antes 45px*/
-          margin-bottom: -83px; /*antes 80px*/
-        }
-        
-        .footer1 p {
-          flex: 1 0 auto;
-          margin: 40px;
-          text-align: center;
-          transition: color 0.3s ease; 
-        }
-        
-       /* .footer1 p:hover {
-          color: #ffcc00; 
-        }  */
-        
+                
         .container2 {
           font-family: Poppins,sans-serif;
           display: flex;
@@ -502,7 +574,28 @@ nav li a {
           max-width: 100%;
         }
         
-      }
+  .image {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+    margin-left: 0; /* Ajusta el margen según sea necesario */
+  }
+
+  .image img {
+    max-width: 100%;
+    width: 300px;
+    height: auto; /*auto*/
+    /*display: block;*/
+}
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: -10px; /* Ajusta el margen según sea necesario */
+}
+
+}
+
+      
 
               /* Ticket MOBILE (2ND PAGE) */ 
 
@@ -526,7 +619,7 @@ nav li a {
   }
 
   nav {
-    padding-top: 30px;
+    padding-top: 45px; /* antes 30px*/
     text-align: right;
     
    }
@@ -562,7 +655,6 @@ nav ul li {
     padding: 8px 0;
     font-family: futura-pt, sans-serif;
     transition: color 0.3s ease; 
-
   }
 
   li {
@@ -677,12 +769,7 @@ table {
 table tr td {
   border-bottom: 2px solid #ffcc00;
   padding: 10px; /* Ajusta según tus necesidades */
-  /*text-decoration: none;*/
-  /*background-color: #424B5A; /***ESTE TAMBIEN ES AZUL, REVISAR***/
   color: #FFFFFF;
-  /*padding: 12px 50px;
-  border-radius: 5px;
-  font-size: 1.2rem;*/
 }
 
 .button a {
@@ -704,33 +791,6 @@ font-family: futura-pt, sans-serif;
   margin-bottom: 10px;
   /*width: 180px;*/ /*este width era el problema en el nav*/
 }
-
-/* .button a {  /*PARA CONFIGURAR EL BOTON DEL NAV LOG IN*/
- /*  background-color: #ffcc00;
-  color: #000;
-  padding: 8px 15px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  /*cursor: pointer;*/
-/*
- max-width: 100%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 1);
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 40px;
-    border-radius: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 10px;
-    box-shadow: 0px 10px 10px black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
-
 
 .purchase-button {
   /* Estilos específicos para el botón de Purchase */
@@ -828,7 +888,7 @@ footer img {                  /* AQUI (se comento width*/
 
       /* Estilos para dispositivos de escritorio */
       
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 900px) {
                        /* home page */
 
         /* Nav section (tickets) */
@@ -848,7 +908,7 @@ footer img {                  /* AQUI (se comento width*/
         }
 
         nav {
-          padding-top: 40px;
+          padding-top: 45px;
           text-align: right;
           display: inline-flex;
         }
@@ -909,7 +969,47 @@ footer img {                  /* AQUI (se comento width*/
     font-size: 1.6rem;
   }
 
-                /* MOVIL 2ND PAGE (TICKETS) */
+    /* footer desktop (tickets) */
+    
+     /* Footer desktop (camping & home page) copia */
+
+    .footer1 {
+      font-family: Poppins,sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      color:#ffffff;
+      font-size: 1.5rem;
+      padding: 30px; /*antes 150*/
+      padding-bottom: 45px; /*antes 45px*/
+      margin-bottom: -90px; /*antes -83px*/
+    }
+    
+    .footer1 p {
+      flex: 1 0 auto;
+      margin: 800px;
+      text-align: center;
+      transition: color 0.3s ease; 
+    }
+    
+     .footer-below {
+      border-top: 1px solid #C2D1D9;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;;
+      font-size: 1.2rem;
+      color: #A1AEB7;
+      text-align: center;
+     }
+    
+     footer img {
+      width: 100%; 
+      max-width: 100%;
+    }
+    
+    }
+
+                 /* MOVIL 2ND PAGE (TICKETS) */
 
   /*Nav section (tickets movil) */
 
@@ -931,7 +1031,7 @@ footer img {                  /* AQUI (se comento width*/
   }
 
   nav {
-    padding-top: 30px;
+    padding-top: 45px;
     text-align: right;
    }
 
@@ -1069,8 +1169,19 @@ table {
 
   /*  Footer  (tickets movil) */
 
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin:80px 0;
+  }
+  
+/*
 .container {
-  /*margin-bottom: 80px;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1078,7 +1189,7 @@ table {
   min-height: 100vh;
   padding: 10px;
   margin:80px 0;
-}
+}  */
 
 .footer1 {
   font-family: Poppins,sans-serif;
@@ -1130,10 +1241,9 @@ table {
 
  footer img {
   width: 100%;
-  max-width: 200px;
+  max-width: 100%;
 }
 
-}
 
                /* MOVIL 3ND PAGE (CAMPING) */
 
@@ -1359,7 +1469,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  margin-left: 42px;
+  margin-left: -30px;
   /*margin: 120px 0 120px 20px;*/
 }
 
@@ -1394,18 +1504,7 @@ p {
   padding-top: 20px;
 }
 
-  /* Footer desktop (camping) */
-
-.container {
-  /*margin-bottom: 80px;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100vh;
-  padding: 10px;
-  margin:80px 0;
-}
+  /* Footer desktop (camping & home page) */
 
 .footer1 {
   font-family: Poppins,sans-serif;
@@ -1417,7 +1516,7 @@ p {
   font-size: 1.5rem;
   padding: 30px; /*antes 150*/
   padding-bottom: 45px; /*antes 45px*/
-  margin-bottom: -83px; /*antes 80px*/
+  margin-bottom: -90px; /*antes -83px*/
 }
 
 .footer1 p {
@@ -1425,25 +1524,6 @@ p {
   margin: 40px;
   text-align: center;
   transition: color 0.3s ease; 
-}
-
-.footer1 p:hover {
-  color: #ffcc00; 
-}
-
-.container2 {
-  font-family: Poppins,sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  color:rgb(146, 100, 204);
-  font-size: 1.8rem;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 110%;
-  padding: 15px;
 }
 
  .footer-below {
@@ -1455,9 +1535,5 @@ p {
   text-align: center;
  }
 
- footer img {
-  width: 100%;
-  max-width: 200px;
-}
 
 }

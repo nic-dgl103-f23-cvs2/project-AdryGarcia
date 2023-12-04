@@ -1,0 +1,55 @@
+
+  
+  .subscribe-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color:rgb(114, 212, 74);
+    font-size: 2.0rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #555555;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+  }
+  
+  button {
+    background-color: #f4ee42;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Poppins, sans-serif;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: #a73cd8;
+    color:cyan;
+  }
