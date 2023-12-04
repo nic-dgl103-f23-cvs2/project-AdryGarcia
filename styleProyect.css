@@ -1161,13 +1161,13 @@ table {
 
 /*************** PAGE 3 (CAMPING) ****************/
 
-/* * * * * * * Content section (Mobile) features * * * * * */
+/* * * * * * * Content (Mobile) * * * * * */
 
 
 .feature h2{
   font-size: 4.5rem;
   color:rgb(114, 212, 74);
-  font-weight: 800
+  font-weight: 800;
 }
   /*   font-weight: 800; */
 h2 {
@@ -1195,6 +1195,8 @@ p {
   justify-content: center;
   color:#ffffff;
   margin-top: -70px;
+  margin-left: 5px;
+  margin-right: 7px;
 }
 
 .camp {
@@ -1226,6 +1228,19 @@ p {
   width: 97%;  /*233 px*/
 }
 
+.FestivalMap img {
+  /*display: flex;*/
+  width: 110%;
+  height: auto;
+  margin-left:-12px;
+}
+
+.FestivalMap {
+  /*display: flex;*/
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+ }
 
 /* * * * * *  Call to action (Mobile)* * * * * */
 
@@ -1244,7 +1259,7 @@ p {
     margin: 26px;  /*antes 70px*/
     color: #b429ff;;
     opacity: 1;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-family: 'Ubuntu', sans-serif;
     background-image: url();
     font-weight: 800;
@@ -1315,7 +1330,7 @@ p {
 /** content desktop **/
 
 /* Large devices (desktop, 1024px and up) */
-@media screen and (min-width: 1200px) {  
+@media screen and (min-width: 1000px) {  
 
   .feature h2 {
     font-size: 6.0rem;
@@ -1384,8 +1399,21 @@ p {
   display: none;
  }
 
- .feature-boxes-with-border p {
+ .FestivalMap {
+  display: flex;
+  width: 80%;
+  align-items: center;
+ }
+/* .feature-boxes-with-border p {
   width: 80%;  /*233 px*/
+}
+/*
+.features-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin-left: 42px;
+  /*margin: 120px 0 120px 20px;*/
 }
 
 /** action desktop **/
