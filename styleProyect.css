@@ -3,16 +3,17 @@
 }
 
 body {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-    box-sizing: border-box; /* Asegura que el modelo de caja sea border-box */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 main {
-  overflow: hidden; /* Evita que los contenidos floten fuera del main */
+  overflow: hidden;
 }
+                /* HOME PAGE */
 
-/******nav section (mobile)******/
+/*nav section (mobile) home page*/
 
   header {
     display: flex;
@@ -87,11 +88,6 @@ nav li a {
     text-decoration: none;
     display: inline-block; 
     text-decoration: none; /***todo esto pertenece al boton del menu login**/
-   /* background-color: rgb(255, 255, 1);
-    color: #000000;
-    padding: 5px 27px;
-    border-radius: 25px;
-    font-size: 1.2rem; */
 }
 
 .show-items {
@@ -113,9 +109,9 @@ nav li a {
   transform: scale(1.1);
  }
 
- /******Hero section (mobile)******/
+ /*Hero (mobile) home page*/
 
-   .H {  /*****por esto no quedaba el diseño resposive******/
+   .H {  /*por esto no quedaba el diseño resposive*/
   text-align: center;
  }
 
@@ -216,7 +212,7 @@ nav li a {
     visibility: hidden;
   }
 
-   /******Content section (mobile)******/
+   /*Content (mobile) home page*/
 
    .content {
     display: inline-flex;
@@ -234,7 +230,6 @@ nav li a {
     font-size: 38px;
     text-align: center;
     width: 100%;
-    /*background: transparent;*/
     padding: 50px 10px;
     margin-top: 120px;
   }
@@ -267,7 +262,6 @@ nav li a {
       font-size: 1.2rem;
       margin: 0px;
       padding: 0px;
-      /*padding-left: 0px; */
   }
 
    .contain {
@@ -278,7 +272,6 @@ nav li a {
   .text1 {   /*pertenece al texto de cada cuadro*/
     max-width: 100%;
     width: 350px;
-    /*height: 25vh;*/
     background:  rgb(147, 100, 204);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
@@ -291,7 +284,6 @@ nav li a {
   }
 
   .Tickets2 p {
-      /*border-radius: 10px;*/
       max-width: 100%;
       background: rgb(255, 138, 81);
       text-align: center;
@@ -301,7 +293,6 @@ nav li a {
 
   .text2 {
     max-width: 100%;
-    /*height: 25vh;*/
     background-color: rgb(255, 138, 81);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
@@ -314,7 +305,6 @@ nav li a {
   }
 
   .Tickets3 p {
-      /*border-radius: 10px;*/
       max-width: 100%;
       background: rgb(1, 197, 229);
       text-align: center;
@@ -324,7 +314,6 @@ nav li a {
 
   .text3 {
     max-width: 100%;
-    /*height: 25vh;*/
     background:rgb(1, 197, 229);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
@@ -337,7 +326,6 @@ nav li a {
   }
 
   .Tickets4 p {
-      /*border-radius: 10px;*/
       max-width: 100%;
       background: rgb(0, 174, 153);
       text-align: center;
@@ -347,7 +335,6 @@ nav li a {
 
   .text4 {
     max-width: 100%;
-    /*height: 25vh;*/
     background: rgb(0, 174, 153);
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
@@ -378,9 +365,9 @@ nav li a {
   font-size: 1.0rem;
 }
 
-  /***********Call to action section (mobile)***********/
+  /*Call to action (mobile) home pague*/
 
-  .accion {  /*****por esto no quedaba el diseño resposive******/
+  .accion {  /*por esto no quedaba el diseño resposive*/
     text-align: center;
     overflow: hidden;
     margin-bottom: 0px;
@@ -439,91 +426,87 @@ nav li a {
       transform: scale(1.1);
      }
 
-  
-      /***********Footer (mobile)***********/
+      /*Footer (mobile) home page*/
 
-      .container {
-        /*display: flex;*/
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 100vh;
-        padding: 10px;
-        margin:-60px 0px 0px;
-      }
-    
-      .image {
-          flex: 1; /* Cada imagen ocupará el mismo espacio */
-          margin: 40px;
-          text-align: center;
-      }
-
-      .image img {
-        max-height: 100px;
-        width: auto;
-        /*max-width: 100%; /* La imagen no sobrepasará el ancho de su contenedor */
-        height: auto;
-      }
-
-      .footer1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        color:#ffffff;
-        font-size: 1.5rem;
-        padding: 15px;
-      }
-
-      .footer1 p {
-        flex: 1 0 auto;
-        margin: 10px;
-        text-align: center;
-        transition: color 0.3s ease; 
-      }
-
-      .footer1 p:hover {
-        color: #ffcc00; 
-      }
-
-      .container2 {
-        font-family: Poppins,sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        color:rgb(146, 100, 204);
-        font-size: 1.8rem;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: 900;
-        line-height: 110%;
-        padding: 15px;
+      .footer img {
+        width: 100%;
+        max-width: 100%;
       }
    
-       .footer-below {
-        border-top: 1px solid #C2D1D9;
-        padding-top: 10px;
-        font-family: 'Ubuntu', sans-serif;;
-        font-size: 1.2rem;
-        color: #A1AEB7;
-        text-align: center;
-       }
 
-       footer img {
-        margin-bottom: 0;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        /*margin: -200px auto;
-        padding: 93px; */
-       }
+      /* footer desktop (home page) */ 
+      
+      /* Large devices (desktop, 1024px and up) */
+      @media screen and (min-width: 768px) {  
 
-       /*************** INICIO PAGINA 2 ****************/
+       /* .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          min-height: 100vh;
+          padding: 10px;
+          margin:80px 0;
+        }
+        
+        .footer1 {
+          font-family: Poppins,sans-serif;
+          display: grid;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          color:#ffffff;
+          font-size: 1.5rem;
+          padding: 30px; /*antes 150*/
+          padding-bottom: 45px; /*antes 45px*/
+          margin-bottom: -83px; /*antes 80px*/
+        }
+        
+        .footer1 p {
+          flex: 1 0 auto;
+          margin: 40px;
+          text-align: center;
+          transition: color 0.3s ease; 
+        }
+        
+       /* .footer1 p:hover {
+          color: #ffcc00; 
+        }  */
+        
+        .container2 {
+          font-family: Poppins,sans-serif;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          color:rgb(146, 100, 204);
+          font-size: 1.8rem;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: 900;
+          line-height: 110%;
+          padding: 15px;
+        }
+        
+         .footer-below {
+          border-top: 1px solid #C2D1D9;
+          padding-top: 10px;
+          font-family: 'Ubuntu', sans-serif;;
+          font-size: 1.2rem;
+          color: #A1AEB7;
+          text-align: center;
+         }
+        
+         footer img {
+          width: 100%;
+          max-width: 100%;
+        }
+        
+      }
 
-       /*** *** Ticket Section MOBILE (2ND PAGE) *** ***/ 
+              /* Ticket MOBILE (2ND PAGE) */ 
 
-  /*Nav section MOBILE (tickets)*/
+  /*Nav mobile (tickets)*/
 
   header {
     display: flex;
@@ -599,11 +582,11 @@ nav ul li {
 nav li a {
     text-decoration: none;
     display: inline-block; 
-    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+    text-decoration: none; /*todo esto pertenece al boton del menu login*/
 }
 
 .show-items {
-  display: inline-flex;
+     display: inline-flex;
      /*display: flex;*/
      flex-direction: column;
      align-items: flex-end;
@@ -622,7 +605,7 @@ nav li a {
   transform: scale(1.1);
  }
 
-/**********Hero section MOBILE (video) tickets ***********/
+ /*Hero MOBILE (video) tickets */
 
  .banner-video {
   width: 100%;
@@ -639,7 +622,7 @@ nav li a {
   height: 350px;
 }
 
-/**** Content section MOBILE (tickets) ****/
+ /*Content MOBILE (tickets) */
 
 .date h4 {
   font-family: 'Bungee', sans-serif;
@@ -672,7 +655,7 @@ nav li a {
   font-weight: 800;
 }
 
-/*****call to action- MOBILE (tickets)*****/
+ /*call to action- MOBILE (tickets)*/
 
 table {
 	  border: 2px solid yellow;
@@ -772,7 +755,7 @@ font-family: futura-pt, sans-serif;
   transition: transform 0.5s ease;
  }
 
- /*****Footer MOVIL (tickets) *****/
+  /*Footer MOVIL (tickets)*/
 
  .container {
   display: flex;
@@ -820,7 +803,7 @@ font-family: futura-pt, sans-serif;
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 60px auto;
+  margin: 100px auto;
   padding: 5px;
 }
 
@@ -830,25 +813,25 @@ font-family: futura-pt, sans-serif;
   height: auto;
 }
 
-footer img {
-  width: 80%; /* Ajusta según sea necesario para dispositivos móviles */
-  margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
+footer img {                  /* AQUI (se comento width*/
+ /* width: 80%; */
+  margin-bottom: 10px; 
 }
 
       
-      /******  /****** /**** DESKTOP SECTION 2ND PAGE ******/ *****/ ****/
+               /* DESKTOP 2ND PAGE (TICKETS) */ 
       
       /* Large devices (desktop, 1024px and up) */
-      @media screen and (min-width: 1200px) {  
+      @media screen and (min-width: 768px) {  
 
-   /******DESKTOP SECTION******/
       }
 
       /* Estilos para dispositivos de escritorio */
       
       @media only screen and (min-width: 1024px) {
+                       /* home page */
 
-        /* Nav section */
+        /* Nav section (tickets) */
 
         nav .toggle {
             display: none;
@@ -870,7 +853,7 @@ footer img {
           display: inline-flex;
         }
 
-        /******Hero section******/  
+        /* Hero section (tickets) */  
 
         .colors_mobile {
           display: none;
@@ -894,7 +877,7 @@ footer img {
       font-size: 1.5rem;
     }
 
-    /*****Content section*****/
+     /* Content section (tickets) */
 
     .content {
       flex-direction:row;
@@ -906,11 +889,11 @@ footer img {
     .Tickets3,
     .Tickets4 {
       flex: 1;
-      max-width: 45%; /* Ajusta el ancho máximo según tus necesidades */
+      max-width: 45%; 
     }
 
 
-    /*****Call to acction section******/
+     /* Call to acction section (tickets) */
 
 .accion h5 {
     font-size: 1.8rem;
@@ -926,9 +909,9 @@ footer img {
     font-size: 1.6rem;
   }
 
-  /*** ***** ******  TICKET SALES (MOVIL) 2ND PAGE **** ***** ****/
+                /* MOVIL 2ND PAGE (TICKETS) */
 
-  /*Nav section*/
+  /*Nav section (tickets movil) */
 
   header {
     display: flex;
@@ -1024,7 +1007,7 @@ nav li a {
   transform: scale(1.1);
  }
 
-/**********Hero section (video)***********/
+  /*Hero section (video) (tickets movil) */
 
  .banner-video {
   width: 100%;
@@ -1041,7 +1024,7 @@ nav li a {
   height: 350px;
 }
 
-/**** Content section ****/
+  /*  Content section (tickets movil) */
 
 .date h4 {
   font-family: 'Bungee', sans-serif;
@@ -1067,7 +1050,7 @@ nav li a {
   margin-top: -50px;
 }
 
-/*****call to action section*****/
+  /* call to action section (tickets movil) */
 
 table {
 	border: 2px solid yellow;
@@ -1084,7 +1067,7 @@ table {
 }
 
 
-/*********** Footer ***********/
+  /*  Footer  (tickets movil) */
 
 .container {
   /*margin-bottom: 80px;*/
@@ -1148,20 +1131,13 @@ table {
  footer img {
   width: 100%;
   max-width: 200px;
-  /*height: auto;
-  display: block;*/
-  /*margin: 0;*/
-  /*float: left;*/
-  /*margin-right: 10px;*/
-  /*padding: 5px;*/
 }
 
 }
 
+               /* MOVIL 3ND PAGE (CAMPING) */
 
-/*************** PAGE 3 (CAMPING) ****************/
-
-/* * * * * * * Content (Mobile) * * * * * */
+  /* Content (Mobile) camping */
 
 
 .feature h2{
@@ -1169,7 +1145,7 @@ table {
   color:rgb(114, 212, 74);
   font-weight: 800;
 }
-  /*   font-weight: 800; */
+
 h2 {
   justify-content: center;
   display: flex;
@@ -1186,7 +1162,6 @@ p {
   font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
   line-height: 25px;
   font-size: 1.2rem;
-  /*justify-content: center;*/
 }
 
 .Campi {   /* texto paragraph y titulos */
@@ -1242,7 +1217,7 @@ p {
   align-items: center;
  }
 
-/* * * * * *  Call to action (Mobile)* * * * * */
+  /* Call to action (Mobile) camping */
 
 .accion {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
@@ -1306,7 +1281,7 @@ p {
    }
 
 
- /* * * * * * * Footer section (Mobile) * * * * * */
+   /*  Footer section (Mobile) camping */
 
  p {
   font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
@@ -1324,13 +1299,12 @@ p {
   /*margin: 120px 0 120px 20px;*/
 }
 
+                /* DESKTOP 3ND PAGE (CAMPING) */
 
-/******DESKTOP SECTION (CAMPING) ******/
-
-/** content desktop **/
+  /* content desktop (camping) */
 
 /* Large devices (desktop, 1024px and up) */
-@media screen and (min-width: 1000px) {  
+@media screen and (min-width: 768px) {  
 
   .feature h2 {
     font-size: 6.0rem;
@@ -1404,19 +1378,8 @@ p {
   width: 80%;
   align-items: center;
  }
-/* .feature-boxes-with-border p {
-  width: 80%;  /*233 px*/
-}
-/*
-.features-row {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 10px;
-  margin-left: 42px;
-  /*margin: 120px 0 120px 20px;*/
-}
 
-/** action desktop **/
+  /* action desktop (camping) */
 
 .accion h5 {
   font-size: 2.7rem;
@@ -1431,7 +1394,7 @@ p {
   padding-top: 20px;
 }
 
-/* Footer desktop */
+  /* Footer desktop (camping) */
 
 .container {
   /*margin-bottom: 80px;*/
@@ -1495,13 +1458,6 @@ p {
  footer img {
   width: 100%;
   max-width: 200px;
-  /*height: auto;
-  display: block;*/
-  /*margin: 0;*/
-  /*float: left;*/
-  /*margin-right: 10px;*/
-  /*padding: 5px;*/
 }
-
 
 }
