@@ -110,7 +110,6 @@ nav li a {
  }
 
 
-
  /*Hero (mobile) home page*/
 
    .H {  /*por esto no quedaba el diseño resposive*/
@@ -364,7 +363,6 @@ max-width: 100%;
   height: 300px;
   font-size: 1.0rem;
 }
-
 
 
   /*Call to action (mobile) home pague*/
@@ -1167,7 +1165,7 @@ table {
 }
 
 
-  /*  Footer  (tickets movil) */
+  /*  Footer  (tickets y home page movil) */
 
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -1180,16 +1178,6 @@ table {
   margin:80px 0;
   }
   
-/*
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100vh;
-  padding: 10px;
-  margin:80px 0;
-}  */
 
 .footer1 {
   font-family: Poppins,sans-serif;
