@@ -1162,61 +1162,75 @@ table {
 }
 
 
-/*************** INICIO PAGINA 3 (CAMPING) ****************/
+/*************** PAGE 3 (CAMPING) ****************/
 
-/* * * * * * * Content section (Mobile)* * * * * */
+/* * * * * * * Content section (Mobile) features * * * * * */
 
-.date {
-  margin-bottom: 30px;
+
+.feature h2{
+  font-size: 4.5rem;
+  color:rgb(114, 212, 74);
+  font-weight: 800
+}
+  /*   font-weight: 800; */
+h2 {
+  justify-content: center;
+  display: flex;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
 }
 
-.date h4 {
-  color: #505D68;
-  text-align: center;
-  font-size: 3.8rem;
-  font-weight: 700;
+h3 {
+  font-size: 1.5rem;
+  color:rgb(44, 211, 198);
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
 }
 
-.Camp_desktop {
+p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.2rem;
+  /*justify-content: center;*/
+}
+
+.Campi {   /* texto paragraph y titulos */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:#A1AEB7;
+  margin-top: -70px;
+}
+
+.camp {
+  margin-top: 50px;
+}
+
+.camping-images img {
+  width: 705px;
+  height: auto; /*657px*/
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.features-row{ 
+  margin: 120px 0 120px 20px;
+}
+
+.camping-images, 
+.iustracion {
+  display: block;
+ }
+
+ .camping-images,
+ .concert {
   display: none;
- /* color: #505D68;
-  text-align: center;
-  font-size: 3.8rem;
-  font-weight: 700; */   /*this is for desktop*/
+ }
+
+ .feature-boxes-with-border p {
+  width: 100%;  /*233 px*/
 }
 
-.camp2 {
-  display: none;
-}
 
-.camping_images img {
-  width: 365px;
-  height: 290px;
-  margin-left: -70px;
-}
-
-.feature-boxes, .features-row {
-  margin: 0 20px;  
-}
-
-.features-boxes{
-  border-bottom:2px solid #F2F5F7;
-}
-
-.features-boxes h3 {
-    font-size: 2.1rem;
-    font-weight: 700;
-    color: #505D68;
-}
-
-.features-boxes p {
-  font-size: 1.4rem;
-  color: #A1AEB7;
-  padding: 0px 40px 15px 0px;
-  line-height: 21px;
-}
-
-/* * * * * *  Call to acction section (Mobile)* * * * * */
+/* * * * * *  Call to action section (Mobile)* * * * * */
 
 .accion {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
@@ -1275,6 +1289,184 @@ table {
    a:hover {
     background: #b429ff;
     transform: scale(1.1);
+    color:aqua;
    }
 
  /* * * * * * * Footer section (Mobile) * * * * * */
+
+/*not necessary*/
+
+
+/******DESKTOP SECTION (CAMPING) ******/
+
+/** content (features) **/
+
+/* Large devices (desktop, 1024px and up) */
+@media screen and (min-width: 1200px) {  
+
+  .feature h2 {
+    font-size: 6.0rem;
+    color:rgb(0, 174, 153);
+    font-weight: 800;
+  }
+
+  /*   font-weight: 800; */
+h2 {
+  justify-content: center;
+  display: flex;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color:rgb(114, 212, 74);
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.35rem;
+  /*justify-content: center;*/
+}
+
+.Campi {   /* texto paragraph y titulos */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:#A1AEB7;
+  margin-top: -70px;
+  margin-left: 80px; /*se agrego*/
+}
+
+.camp {
+  margin-top: 50px;
+}
+
+.camping-images img {
+  width: 705px;
+  height: auto; /*657px*/
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.features-row{ 
+  margin: 120px 0 120px 20px;
+}
+
+.features-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-left: 42px;
+  /*margin: 120px 0 120px 20px;*/
+}
+
+.camping-images, 
+.iustracion {
+  display: block;
+ }
+
+ .camping-images,
+ .concert {
+  display: none;
+ }
+
+ .feature-boxes-with-border p {
+  width: 80%;  /*233 px*/
+}
+
+}
+
+  /*
+  .feature-title h2{
+    font-size: 4.5rem;
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: wrap;
+    /*flex-direction: row;*/
+   /* justify-content: center;
+  }
+
+  .tablet-title{
+    margin-top: 100px;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+   /* width: 705px;
+    height: 657px;*/
+  /*  height: auto;
+    margin-top: 40px;
+    margin-left: -100px;
+  } 
+
+  .features-row { /* REVISAR POR QUE FALTA ESTE APARTADO*/
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 42px;
+    /*margin: 120px 0 120px 20px;*/
+  }
+/*
+  .ipad-small{
+    display: block;
+   }
+  
+   .feature-image img 
+   .ipad-large {
+    display: block;
+    /*display: none;*/
+  } 
+/*
+  .feature-boxes p, 
+  .feature-boxes-with-border p {
+    width: 445px;  /*antes 233px*/  
+  }
+}
+
+
+  /*
+  .date h4 {
+    display: none;
+  }
+
+  .date h3 {
+    font-size: 4.5rem;
+  }
+
+  .Camping {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Camp_desktop {
+    margin-top: 100px;
+  }
+
+  .camping_images img{
+    width: 705px;
+    height: 657px;
+    margin-top: 40px;
+    margin-left: -100px;
+  } 
+
+  .features-row {
+    margin: 120px 0 120px 20px;
+    
+  }
+
+  .Camp_mobile {
+    display: block;
+   }
+  
+   .feature-image .Camp_mobile {
+    display: none;
+  }
+
+  .feature-boxes p {
+    width: 233px;
+  }*/
