@@ -1156,9 +1156,6 @@ table {
   /*padding: 5px;*/
 }
 
-  /*footer img {
-  width: 30%; /* Ajusta según sea necesario para dispositivos móviles */
-  /*margin-bottom: 10px; /* Espacio entre las imágenes en dispositivos móviles */
 }
 
 
@@ -1196,7 +1193,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color:#A1AEB7;
+  color:#ffffff;
   margin-top: -70px;
 }
 
@@ -1226,11 +1223,11 @@ p {
  }
 
  .feature-boxes-with-border p {
-  width: 100%;  /*233 px*/
+  width: 97%;  /*233 px*/
 }
 
 
-/* * * * * *  Call to action section (Mobile)* * * * * */
+/* * * * * *  Call to action (Mobile)* * * * * */
 
 .accion {  /*****por esto no quedaba el diseño resposive******/
   text-align: center;
@@ -1244,24 +1241,25 @@ p {
     text-align: center;
     letter-spacing: 0px;
     max-width: 100%;
-    margin: 70px;
-    color: rgb(255, 255, 255);
+    margin: 26px;  /*antes 70px*/
+    color: #b429ff;;
     opacity: 1;
     font-size: 1.3rem;
     font-family: 'Ubuntu', sans-serif;
     background-image: url();
+    font-weight: 800;
  }
 
  .accion p {
     background: transparent;
     color: #ffffff;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem; /*antes 2.5*/
     line-height: 48px;
     font-weight: 700;
     margin: 0 42.5px 75px 42.5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
     .accion a {
@@ -1292,14 +1290,29 @@ p {
     color:aqua;
    }
 
+
  /* * * * * * * Footer section (Mobile) * * * * * */
 
-/*not necessary*/
+ p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.0rem;
+  /* justify-content: center; */
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin-left: 0px;
+  margin-top: 50px;
+  /*margin: 120px 0 120px 20px;*/
+}
 
 
 /******DESKTOP SECTION (CAMPING) ******/
 
-/** content (features) **/
+/** content desktop **/
 
 /* Large devices (desktop, 1024px and up) */
 @media screen and (min-width: 1200px) {  
@@ -1310,7 +1323,6 @@ p {
     font-weight: 800;
   }
 
-  /*   font-weight: 800; */
 h2 {
   justify-content: center;
   display: flex;
@@ -1376,97 +1388,92 @@ p {
   width: 80%;  /*233 px*/
 }
 
+/** action desktop **/
+
+.accion h5 {
+  font-size: 2.7rem;
+  margin: 26px;
+  color:#b429ff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
 }
 
-  /*
-  .feature-title h2{
-    font-size: 4.5rem;
-  }
+.accion p {
+  font-size: 1.9rem;
+  padding-top: 20px;
+}
 
-  .feature-content {
-    display: flex;
-    flex-direction: wrap;
-    /*flex-direction: row;*/
-   /* justify-content: center;
-  }
+/* Footer desktop */
 
-  .tablet-title{
-    margin-top: 100px;
-  }
+.container {
+  /*margin-bottom: 80px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin:80px 0;
+}
 
-  .feature-image img {
-    max-width: 100%;
-   /* width: 705px;
-    height: 657px;*/
-  /*  height: auto;
-    margin-top: 40px;
-    margin-left: -100px;
-  } 
+.footer1 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.5rem;
+  padding: 30px; /*antes 150*/
+  padding-bottom: 45px; /*antes 45px*/
+  margin-bottom: -83px; /*antes 80px*/
+}
 
-  .features-row { /* REVISAR POR QUE FALTA ESTE APARTADO*/
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-left: 42px;
-    /*margin: 120px 0 120px 20px;*/
-  }
-/*
-  .ipad-small{
-    display: block;
-   }
-  
-   .feature-image img 
-   .ipad-large {
-    display: block;
-    /*display: none;*/
-  } 
-/*
-  .feature-boxes p, 
-  .feature-boxes-with-border p {
-    width: 445px;  /*antes 233px*/  
-  }
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 40px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+.footer1 p:hover {
+  color: #ffcc00; 
+}
+
+.container2 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:rgb(146, 100, 204);
+  font-size: 1.8rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 110%;
+  padding: 15px;
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 1.2rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+ footer img {
+  width: 100%;
+  max-width: 200px;
+  /*height: auto;
+  display: block;*/
+  /*margin: 0;*/
+  /*float: left;*/
+  /*margin-right: 10px;*/
+  /*padding: 5px;*/
 }
 
 
-  /*
-  .date h4 {
-    display: none;
-  }
-
-  .date h3 {
-    font-size: 4.5rem;
-  }
-
-  .Camping {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .Camp_desktop {
-    margin-top: 100px;
-  }
-
-  .camping_images img{
-    width: 705px;
-    height: 657px;
-    margin-top: 40px;
-    margin-left: -100px;
-  } 
-
-  .features-row {
-    margin: 120px 0 120px 20px;
-    
-  }
-
-  .Camp_mobile {
-    display: block;
-   }
-  
-   .feature-image .Camp_mobile {
-    display: none;
-  }
-
-  .feature-boxes p {
-    width: 233px;
-  }*/
+}
