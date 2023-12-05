@@ -11,6 +11,7 @@ body {
 main {
   overflow: hidden;
 }
+
                 /* HOME PAGE */
 
 /*nav section (mobile) home page*/
@@ -172,17 +173,8 @@ nav li a {
    }
 
 .banner {
- /* position:static; */
   height: 90px;
 }  
-
-/* .banner img {
-max-width: 100%;
-} */
-
- /* .colors_desktop {
-    display: none;
-  } */
 
   .hero {
     padding-top: 50px;
@@ -360,14 +352,13 @@ max-width: 100%;
 .text3,
 .text4 {
   width: 400px;
-  height: 100px; /* antes 300*/
+  height: 100px; 
   font-size: 1.0rem;
-  padding: 112px; /*se agrego*/
+  padding: 112px; 
 }
 
 .pass-info h5{
   color: #ffffff;
-  /*text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);*/
   font-family: 'Ubuntu', sans-serif;
   font-size: 38px;
   text-align: center;
@@ -435,7 +426,7 @@ max-width: 100%;
 
   /*Call to action (mobile) home pague*/
 
-  .accion {  /*por esto no quedaba el diseño resposive*/
+  .accion {  
     text-align: center;
     overflow: hidden;
     margin-bottom: 0px;
@@ -562,7 +553,7 @@ max-width: 100%;
     margin-left: -30px;
 
 
-      /* Desktop (home page) */     /****PENDIENTE****/
+      /* Desktop (home page) */  
       
       /* Large devices (desktop, 1024px and up) */
       @media screen and (min-width: 768px) {  
@@ -591,6 +582,7 @@ max-width: 100%;
     }
 
       /* footer desktop (home page) */ 
+
         .footer1 p {
           flex: 1 0 auto;
           margin: 10px;
@@ -599,7 +591,6 @@ max-width: 100%;
         }
 
         .container {
-          /*flex-wrap: wrap;*/
           display: grid;
           justify-content: space-around;
           align-items: center;
@@ -607,8 +598,6 @@ max-width: 100%;
           padding: 10px;
           margin:80px 0;
           grid-template-columns: repeat(3, 1fr);
-          /*grid-gap: 10px;
-          margin-left: -30px;*/
         }
                 
         .container2 {
@@ -642,21 +631,20 @@ max-width: 100%;
         
   .image {
     grid-template-columns: repeat(1, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
-    margin-left: 0; /* Ajusta el margen según sea necesario */
+    margin-left: 0; 
   }
 
   .image img {
     max-width: 100%;
     width: 300px;
-    height: auto; /*auto*/
-    /*display: block;*/
+    height: auto; 
 }
 
 .image {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  margin-left: -10px; /* Ajusta el margen según sea necesario */
+  margin-left: -10px;
 }
 
 
@@ -686,7 +674,7 @@ max-width: 100%;
   }
 
   nav {
-    padding-top: 45px; /* antes 30px*/
+    padding-top: 45px;
     text-align: right;
     
    }
@@ -741,16 +729,14 @@ nav ul li {
 nav li a {
     text-decoration: none;
     display: inline-block; 
-    text-decoration: none; /*todo esto pertenece al boton del menu login*/
+    text-decoration: none; /*boton login*/
 }
 
 .show-items {
      display: inline-flex;
-     /*display: flex;*/
      flex-direction: column;
      align-items: flex-end;
      margin-bottom: 10px;
-     /*width: 180px;*/ /*este width era el problema en el nav*/
  }
 
  .log-in {
@@ -814,7 +800,7 @@ nav li a {
   font-weight: 800;
 }
 
- /*call to action- MOBILE (tickets)*/
+ /*call to action - MOBILE (tickets)*/
 
 table {
 	  border: 2px solid yellow;
@@ -823,7 +809,6 @@ table {
     font-style: normal;
     border-radius: 15px;
     overflow:hidden;
-    /*margin:auto;*/
     margin-top: -50px;
     width: 80%;
     /*Estilos para tabla responsiva*/
@@ -861,7 +846,7 @@ font-family: futura-pt, sans-serif;
 
 .purchase-button {
   /* Estilos específicos para el botón de Purchase */
-  background-color: #b429ff; /* Puedes ajustar el color según tus preferencias */
+  background-color: #b429ff; 
   color:#04ff00; /* Color del texto */
   padding: 12px 35px;
   border-radius: 20px;
@@ -940,162 +925,12 @@ font-family: futura-pt, sans-serif;
   height: auto;
 }
 
-footer img {                  /* AQUI (se comento width*/
- /* width: 80%; */
+footer img {                  
   margin-bottom: 10px; 
 }
+                /* SECOND PAGE */
 
-      
-               /* DESKTOP 2ND PAGE (TICKETS) */ 
-      
-      /* Large devices (desktop, 1024px and up) */
-      @media screen and (min-width: 768px) {  
-
-      }
-
-      /* Estilos para dispositivos de escritorio */
-      
-      @media only screen and (min-width: 900px) {
-                       /* home page */
-
-        /* Nav section (tickets) */
-
-        nav .toggle {
-            display: none;
-        }
-
-        .navigation-elements ul {
-            display: flex;
-            flex-direction: row;
-            margin-top: 0;
-        }
-
-        .show-items li {
-            margin-right: 60px; 
-        }
-
-        nav {
-          padding-top: 45px;
-          text-align: right;
-          display: inline-flex;
-        }
-
-        /* Hero section (tickets) */  
-
-        .colors_mobile {
-          display: none;
-        }
-
-        .colors_desktop {
-          display: block;
-        }
-
-        .hero h3 {
-          font-size: 2.5rem; 
-          margin-top: -300px;
-        }
-  
-    .hero h1 {
-      font-size: 3.9rem; 
-      line-height: 0.95;
-    }
-  
-    .hero a {
-      font-size: 1.5rem;
-    }
-
-     /* Content section (tickets) */
-
-    .content {
-      flex-direction:row;
-      align-items: center; 
-    }
-
-    .Tickets1,
-    .Tickets2,
-    .Tickets3,
-    .Tickets4 {
-      flex: 1;
-      max-width: 45%; 
-    }
-
-    .pass-content{
-      width: 1170px;
-      margin: auto;
-      display: flex;
-      height: 300px;
-    }
-
-
-    .title1,
-    .title2,
-    .title3,
-    .title4{
-      font-size: 15px;
-    }
-    .pass1,
-    .pass2,
-    .pass3{
-      margin-right: 10px;
-    }
-
-     /* Call to acction section (tickets) */
-
-.accion h5 {
-    font-size: 1.8rem;
-    padding-top: 150px;
- }
-
- .accion p {
-    font-size: 3.2rem;
-    padding-top: 90px;
-  }
-
-    .accion a {
-    font-size: 1.6rem;
-  }
-
-    /* footer desktop (tickets) */
-    
-     /* Footer desktop (camping & home page) copia */
-
-    .footer1 {
-      font-family: Poppins,sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      color:#ffffff;
-      font-size: 1.5rem;
-      padding: 30px; /*antes 150*/
-      padding-bottom: 45px; /*antes 45px*/
-      margin-bottom: -90px; /*antes -83px*/
-    }
-    
-    .footer1 p {
-      flex: 1 0 auto;
-      margin: 800px;
-      text-align: center;
-      transition: color 0.3s ease; 
-    }
-    
-     .footer-below {
-      border-top: 1px solid #C2D1D9;
-      padding-top: 10px;
-      font-family: 'Ubuntu', sans-serif;;
-      font-size: 1.2rem;
-      color: #A1AEB7;
-      text-align: center;
-     }
-    
-     footer img {
-      width: 100%; 
-      max-width: 100%;
-    }
-    
-    }
-
-                 /* MOVIL 2ND PAGE (TICKETS) */
+          /* Mobile 2nd page (TICKETS) */
 
   /*Nav section (tickets movil) */
 
@@ -1321,6 +1156,152 @@ table {
 }
 
 
+              /* 2nd page (TICKETS) - desktop*/ 
+      
+      /* Large devices (desktop, 1024px and up) */
+      
+      @media only screen and (min-width: 900px) {
+                       /* home page */
+
+        /* Nav section (tickets) */
+
+        nav .toggle {
+            display: none;
+        }
+
+        .navigation-elements ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        .show-items li {
+            margin-right: 60px; 
+        }
+
+        nav {
+          padding-top: 45px;
+          text-align: right;
+          display: inline-flex;
+        }
+
+        /* Hero section (tickets) */  
+
+        .colors_mobile {
+          display: none;
+        }
+
+        .colors_desktop {
+          display: block;
+        }
+
+        .hero h3 {
+          font-size: 2.5rem; 
+          margin-top: -300px;
+        }
+  
+    .hero h1 {
+      font-size: 3.9rem; 
+      line-height: 0.95;
+    }
+  
+    .hero a {
+      font-size: 1.5rem;
+    }
+
+     /* Content section (tickets) */
+
+    .content {
+      flex-direction:row;
+      align-items: center; 
+    }
+
+    .Tickets1,
+    .Tickets2,
+    .Tickets3,
+    .Tickets4 {
+      flex: 1;
+      max-width: 45%; 
+    }
+
+    .pass-content{
+      width: 1170px;
+      margin: auto;
+      display: flex;
+      height: 300px;
+    }
+
+
+    .title1,
+    .title2,
+    .title3,
+    .title4{
+      font-size: 15px;
+    }
+    .pass1,
+    .pass2,
+    .pass3{
+      margin-right: 10px;
+    }
+
+     /* Call to acction section (tickets) */
+
+.accion h5 {
+    font-size: 1.8rem;
+    padding-top: 150px;
+ }
+
+ .accion p {
+    font-size: 3.2rem;
+    padding-top: 90px;
+  }
+
+    .accion a {
+    font-size: 1.6rem;
+  }
+
+    /* footer desktop (tickets) */
+    
+     /* Footer desktop (camping & home page & tickets) copia */
+
+    .footer1 {
+      font-family: Poppins,sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      color:#ffffff;
+      font-size: 1.5rem;
+      padding: 30px; 
+      padding-bottom: 45px; 
+      margin-bottom: -90px; 
+    }
+    
+    .footer1 p {
+      flex: 1 0 auto;
+      margin: 800px;
+      text-align: center;
+      transition: color 0.3s ease; 
+    }
+    
+     .footer-below {
+      border-top: 1px solid #C2D1D9;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;;
+      font-size: 1.2rem;
+      color: #A1AEB7;
+      text-align: center;
+     }
+    
+     footer img {
+      width: 100%; 
+      max-width: 100%;
+    }
+    
+    }
+  
+                      /* 3TH PAGE */
+
                /* MOVIL 3ND PAGE (CAMPING) */
 
   /* Content (Mobile) camping */
@@ -1366,7 +1347,7 @@ p {
 
 .camping-images img {
   width: 705px;
-  height: auto; /*657px*/
+  height: auto; 
   margin-top: 40px;
   margin-left: -100px;
 }
@@ -1386,18 +1367,16 @@ p {
  }
 
  .feature-boxes-with-border p {
-  width: 97%;  /*233 px*/
+  width: 97%;  
 }
 
 .FestivalMap img {
-  /*display: flex;*/
   width: 110%;
   height: auto;
   margin-left:-12px;
 }
 
 .FestivalMap {
-  /*display: flex;*/
   width: 80%;
   margin: 0 auto;
   align-items: center;
@@ -1405,7 +1384,7 @@ p {
 
   /* Call to action (Mobile) camping */
 
-.accion {  /*****por esto no quedaba el diseño resposive******/
+.accion {  /*por esto no quedaba el diseño resposive*/
   text-align: center;
   overflow: hidden;
   margin-bottom: 0px;
@@ -1417,7 +1396,7 @@ p {
     text-align: center;
     letter-spacing: 0px;
     max-width: 100%;
-    margin: 26px;  /*antes 70px*/
+    margin: 26px;  
     color: #b429ff;;
     opacity: 1;
     font-size: 1.7rem;
@@ -1430,7 +1409,7 @@ p {
     background: transparent;
     color: #ffffff;
     text-align: center;
-    font-size: 1.5rem; /*antes 2.5*/
+    font-size: 1.5rem; 
     line-height: 48px;
     font-weight: 700;
     margin: 0 42.5px 75px 42.5px;
@@ -1473,16 +1452,14 @@ p {
   font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
   line-height: 25px;
   font-size: 1.0rem;
-  /* justify-content: center; */
 }
 
 .footer1 {
-  display: inline; /*antes grid*/
+  display: inline; 
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   margin-left: 0px;
   margin-top: 50px;
-  /*margin: 120px 0 120px 20px;*/
 }
 
                 /* DESKTOP 3ND PAGE (CAMPING) */
@@ -1514,7 +1491,6 @@ p {
   font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
   line-height: 25px;
   font-size: 1.35rem;
-  /*justify-content: center;*/
 }
 
 .Campi {   /* texto paragraph y titulos */
@@ -1523,7 +1499,7 @@ p {
   justify-content: center;
   color:#A1AEB7;
   margin-top: -70px;
-  margin-left: 80px; /*se agrego*/
+  margin-left: 80px; 
 }
 
 .camp {
@@ -1532,7 +1508,7 @@ p {
 
 .camping-images img {
   width: 705px;
-  height: auto; /*657px*/
+  height: auto; 
   margin-top: 40px;
   margin-left: -100px;
 }
@@ -1546,7 +1522,6 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   margin-left: -30px;
-  /*margin: 120px 0 120px 20px;*/
 }
 
 .camping-images, 
@@ -1590,9 +1565,9 @@ p {
   align-items: center;
   color:#ffffff;
   font-size: 1.5rem;
-  padding: 30px; /*antes 150*/
-  padding-bottom: 45px; /*antes 45px*/
-  margin-bottom: -90px; /*antes -83px*/
+  padding: 30px; 
+  padding-bottom: 45px; 
+  margin-bottom: -90px; 
 }
 
 .footer1 p {
