@@ -172,17 +172,17 @@ nav li a {
    }
 
 .banner {
-  position:static;
+ /* position:static; */
   height: 90px;
 }  
 
-.banner img {
+/* .banner img {
 max-width: 100%;
-}
+} */
 
-  .colors_desktop {
+ /* .colors_desktop {
     display: none;
-  }
+  } */
 
   .hero {
     padding-top: 50px;
@@ -367,11 +367,11 @@ max-width: 100%;
 
 .pass-info h5{
   color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
+  /*text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);*/
   font-family: 'Ubuntu', sans-serif;
   font-size: 38px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 370px;
   
 }
 
@@ -1477,7 +1477,7 @@ p {
 }
 
 .footer1 {
-  display: grid;
+  display: inline; /*antes grid*/
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   margin-left: 0px;
