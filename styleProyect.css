@@ -243,7 +243,7 @@ max-width: 100%;
     margin-bottom: 0;
     margin: 10px 0px 0px 50px;
     font-weight: 800;
-    line-height: 250%;
+    line-height: 0%;
     display: block;
   }
 
@@ -359,9 +359,77 @@ max-width: 100%;
 .text2,
 .text3,
 .text4 {
-  width: auto;
-  height: 300px;
+  width: 400px;
+  height: 100px; /* antes 300*/
   font-size: 1.0rem;
+  padding: 112px; /*se agrego*/
+}
+
+.pass-info h5{
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 0;
+  
+}
+
+.pass-content{
+  margin: 30px;
+  text-align: center;
+}
+
+.pass1{
+  background: rgba(147, 100, 204);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass1 p{
+  background: rgba(147, 100, 204);
+}
+
+.pass2{
+  background: rgb(255, 138, 81);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass2 p{
+  background: rgb(255, 138, 81);
+}
+
+.pass3 {
+  background: rgb(0, 174, 153);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass3 p{
+  background: rgb(0, 174, 153);
+}
+
+.pass4{
+  background: rgb(84, 174, 0);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+}
+
+.pass4 p{
+  background: rgb(84, 174, 0);
+}
+
+
+.pass3 p{
+  background: rgb(0, 174, 153);
 }
 
 
@@ -590,6 +658,7 @@ max-width: 100%;
   grid-gap: 10px;
   margin-left: -10px; /* Ajusta el margen según sea necesario */
 }
+
 
 }
 
@@ -950,6 +1019,25 @@ footer img {                  /* AQUI (se comento width*/
       max-width: 45%; 
     }
 
+    .pass-content{
+      width: 1170px;
+      margin: auto;
+      display: flex;
+      height: 300px;
+    }
+
+
+    .title1,
+    .title2,
+    .title3,
+    .title4{
+      font-size: 15px;
+    }
+    .pass1,
+    .pass2,
+    .pass3{
+      margin-right: 10px;
+    }
 
      /* Call to acction section (tickets) */
 
