@@ -1588,3 +1588,109 @@ p {
 
 
 }
+
+
+ /* contact Us */
+
+
+.contact p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 2.2rem;
+  color: rgb(114, 212, 74);
+  font-weight: 900;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 5.0rem;
+}
+
+.contact {  /* AQUI ME QUEDE*/
+  background: transparent;
+}
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display:inline;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+          /* contact us (desktop)*/
+
+/* Large devices (desktop, 1024px and up) */
+@media screen and (max-width: 1024px) {  
+
+  .contact p {
+    font-size: 3.0rem;
+    color:#45a049;
+  }
+
+}
+        
+/* revisar*/
+       
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 16px;
+  width: 350px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #f4ee42;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Poppins, sans-serif;
+  color: black;
+}
+
+button:hover {
+  background-color: #a73cd8;
+  color:cyan;
+}
