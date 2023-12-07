@@ -1,0 +1,1691 @@
+* {
+    background-color: rgb(17, 17, 17)
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+main {
+  overflow: hidden;
+}
+
+                /* HOME PAGE */
+
+/*nav section (mobile) home page*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    background-color: transparent;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    max-width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+  }
+
+  nav {
+    padding-top: 45px; /* antes 30px*/
+    text-align: right;
+   }
+
+.toggle i {
+    color: rgb(0, 0, 0);
+    font-size:2.0rem;
+    margin: 20px 30px 30px 0;
+    background-color: rgb(255, 255, 255); 
+} 
+
+.toggle {
+  background-color: transparent;
+}
+  
+.login-anchor {
+    display: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+
+nav ul li {
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color 0.3s ease; 
+  }
+
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
+    margin-top: 10px;
+    visibility: hidden;
+}  
+   
+
+nav li a {
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+}
+
+.show-items {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-bottom: 10px;
+     /*width: 180px;*/ /*este width era el problema en el nav*/
+ }
+
+ .log-in {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ .log-in:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
+
+ /*Hero (mobile) home page*/
+
+   .H {  /*por esto no quedaba el diseño resposive*/
+  text-align: center;
+ }
+
+.hero h3 {
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-a1aeb7);
+    text-align: center;
+    letter-spacing: 0px;
+    max-width: 100%;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 150px;
+ }
+
+ .hero h1 {
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0 42.5px 75px 42.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 10px;
+  }
+
+    .hero a {
+    max-width: 100%;
+    display:inline-block;
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgb(255, 255, 1);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  a {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition: transform 0.5s ease;
+   }
+  
+   a:hover {
+    background: #b429ff;
+    transform: scale(1.1);
+   }
+
+.banner {
+  height: 90px;
+}  
+
+  .hero {
+    padding-top: 50px;
+    display:inline-block;
+    background: transparent;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px; 
+  }
+
+  h3, h1, a {
+    margin: 0;
+  }
+
+  .hero h3 {
+    margin-top: -480px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    padding-top: 450px;
+    background-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  .background4 {
+    visibility: hidden;
+  }
+
+   /*Content (mobile) home page*/
+
+   .content {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+  }
+
+  .content h5 {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    padding: 50px 10px;
+    margin-top: 120px;
+  }
+
+  .title2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Poppins, sans-serif;
+    font-size: var(--font-size--h3);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 10px 0px 0px 50px;
+    font-weight: 800;
+    line-height: 0%;
+    display: block;
+  }
+
+  .Tickets img {
+    width: 80px;
+    margin: 0 auto; /* Centra la imagen */
+    background-color: transparent;
+  }
+
+  .Tickets1 p {   /*pertenece al titulo*/
+      text-align: center;
+      max-width: 100%;
+      background: rgba(147, 100, 204);
+      font-family: Lexend Deca,sans-serif;
+      font-size: 1.2rem;
+      margin: 0px;
+      padding: 0px;
+  }
+
+   .contain {
+    justify-content: center;
+    padding-left: 10px;
+}
+
+  .text1 {   /*pertenece al texto de cada cuadro*/
+    max-width: 100%;
+    width: 350px;
+    background:  rgb(147, 100, 204);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 80px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 0px;
+  }
+
+  .Tickets2 p {
+      max-width: 100%;
+      background: rgb(255, 138, 81);
+      text-align: center;
+      font-family: Lexend Deca,sans-serif;
+      font-size: 1.2rem;
+  }
+
+  .text2 {
+    max-width: 100%;
+    background-color: rgb(255, 138, 81);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 80px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .Tickets3 p {
+      max-width: 100%;
+      background: rgb(1, 197, 229);
+      text-align: center;
+      font-family: Lexend Deca,sans-serif;
+      font-size: 1.2rem;
+  }
+
+  .text3 {
+    max-width: 100%;
+    background:rgb(1, 197, 229);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 80px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .Tickets4 p {
+      max-width: 100%;
+      background: rgb(0, 174, 153);
+      text-align: center;
+      font-family: Lexend Deca,sans-serif;
+      font-size: 1.2rem;
+  }
+
+  .text4 {
+    max-width: 100%;
+    background: rgb(0, 174, 153);
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0rem;
+    padding: 10px 80px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+  }
+
+.Tickets1,
+.Tickets2,
+.Tickets3,
+.Tickets4 {
+    flex: 1;
+    margin: 0px;
+    text-align:justify;
+    max-width: 100%; /* Ajustar el ancho máximo */
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  width: 400px;
+  height: 100px; 
+  font-size: 1.0rem;
+  padding: 112px; 
+}
+
+.pass-info h5{
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 370px;
+  
+}
+
+.pass-content{
+  margin: 30px;
+  text-align: center;
+}
+
+.pass1{
+  background: rgba(147, 100, 204);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass1 p{
+  background: rgba(147, 100, 204);
+}
+
+.pass2{
+  background: rgb(255, 138, 81);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass2 p{
+  background: rgb(255, 138, 81);
+}
+
+.pass3 {
+  background: rgb(0, 174, 153);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pass3 p{
+  background: rgb(0, 174, 153);
+}
+
+.pass4{
+  background: rgb(84, 174, 0);
+  height: 100%;
+  padding: 30px;
+  max-width: 100%;
+}
+
+.pass4 p{
+  background: rgb(84, 174, 0);
+}
+
+
+.pass3 p{
+  background: rgb(0, 174, 153);
+}
+
+
+  /*Call to action (mobile) home pague*/
+
+  .accion {  
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0px;
+   }
+  
+  .accion h5 {
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-a1aeb7);
+      text-align: center;
+      letter-spacing: 0px;
+      max-width: 100%;
+      margin: 60px; 
+      color: rgb(255, 255, 255);
+      opacity: 1;
+      font-size: 1.3rem;
+      font-family: 'Ubuntu', sans-serif;
+      background-image: url();
+   }
+  
+   .accion p {
+      background: transparent;
+      color: #ffffff;
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 48px;
+      font-weight: 700;
+      margin: 0 42.5px 75px 42.5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      padding-top: 60px;
+    }
+  
+      .accion a {
+      max-width: 100%;
+      display:inline-block;
+      align-items: center; /* Centra verticalmente */
+      justify-content: center; /* Centra horizontalmente */
+      background-color: rgb(255, 255, 1);
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 40px;
+      border-radius: 50px;
+      font-family: 'Ubuntu', sans-serif;
+      padding-bottom: 10px;
+      box-shadow: 0px 10px 10px black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin:20px;
+      transition-duration: 0.25s;
+      transition-timing-function: linear;
+      transition: transform 0.5s ease;
+    }
+    
+     a:hover {
+      background: #b429ff;
+      transform: scale(1.1);
+     }
+
+      /*Footer (mobile) home page*/
+
+      .footer img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+        
+  .subscribe-section {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color:rgb(114, 212, 74);
+    font-size: 2.0rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #555555;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+  }
+  
+  button {
+    background-color: #f4ee42;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Poppins, sans-serif;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: #a73cd8;
+    color:cyan;
+  }
+
+
+      /* Desktop (home page) */  
+      
+      /* Large devices (desktop, 1024px and up) */
+      @media screen and (min-width: 768px) {  
+        
+        /* Hero section */
+
+        .banner img {
+          max-width: 120%;
+        }
+
+        .content h5 {
+          background: transparent;
+          color: #ffffff;
+          text-shadow: 1px 1px 2px rgba(255, 255, 255, 1.5);
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 38px;
+          text-align: center;
+          width: 100%;
+          padding: 50px 10px;
+          margin-top: 724px;
+      }
+
+      .hero {
+        padding: 0px;
+        margin-bottom: -103px;
+    }
+
+      /* footer desktop (home page) */ 
+
+        .footer1 p {
+          flex: 1 0 auto;
+          margin: 10px;
+          text-align: center;
+          transition: color 0.3s ease; 
+        }
+
+        .container {
+          display: grid;
+          justify-content: space-around;
+          align-items: center;
+          min-height: 100vh;
+          padding: 10px;
+          margin:80px 0;
+          grid-template-columns: repeat(3, 1fr);
+        }
+                
+        .container2 {
+          font-family: Poppins,sans-serif;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          color:rgb(146, 100, 204);
+          font-size: 1.8rem;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: 900;
+          line-height: 110%;
+          padding: 15px;
+        }
+        
+         .footer-below {
+          border-top: 1px solid #C2D1D9;
+          padding-top: 10px;
+          font-family: 'Ubuntu', sans-serif;;
+          font-size: 1.2rem;
+          color: #A1AEB7;
+          text-align: center;
+         }
+        
+         footer img {
+          width: 100%;
+          max-width: 100%;
+        }
+        
+  .image {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+    margin-left: 0; 
+  }
+
+  .image img {
+    max-width: 100%;
+    width: 300px;
+    height: auto; 
+}
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: -10px;
+}
+
+
+}
+
+      
+
+              /* Ticket MOBILE (2ND PAGE) */ 
+
+  /*Nav mobile (tickets)*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    background-color: transparent;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    max-width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+  }
+
+  nav {
+    padding-top: 45px;
+    text-align: right;
+    
+   }
+
+.toggle i {
+    color: rgb(0, 0, 0);
+    font-size:2.0rem;
+    margin: 20px 30px 30px 0;
+    background-color: rgb(255, 255, 255); 
+} 
+
+.toggle {
+  background-color: transparent;
+}
+  
+.login-anchor {
+    display: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+
+nav ul li {
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px 0;
+    font-family: futura-pt, sans-serif;
+    transition: color 0.3s ease; 
+  }
+
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
+    margin-top: 10px;
+    visibility: hidden;
+}  
+   
+
+nav li a {
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none; /*boton login*/
+}
+
+.show-items {
+     display: inline-flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-bottom: 10px;
+ }
+
+ .log-in {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ .log-in:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
+ /*Hero MOBILE (video) tickets */
+
+ .banner-video {
+  width: 100%;
+  height: 300px;
+  object-fit:fill;
+  object-fit: cover;
+}
+
+.videohero {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+ /*Content MOBILE (tickets) */
+
+.date h4 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 5.5rem; 
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(114, 212, 74);
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.date h5 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 3rem; 
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(114, 212, 74);
+  margin-top: -120px;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.date h6 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 3.3rem; 
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  margin-top: -30px;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 800;
+}
+
+ /*call to action - MOBILE (tickets)*/
+
+table {
+	  border: 2px solid yellow;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 15px;
+    overflow:hidden;
+    margin-top: -50px;
+    width: 80%;
+    /*Estilos para tabla responsiva*/
+    max-width: 100%;
+    display:flex;
+    color: #ffcc00;
+    font-size: 15px;
+}
+
+table tr td {
+  border-bottom: 2px solid #ffcc00;
+  padding: 10px; /* Ajusta según tus necesidades */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.button a {
+display: inline-flex;
+margin: 8px;
+background: #ffcc00;
+padding: 10px 35px;
+border-radius: 20px;
+text-decoration: none;
+font-size: 1.2rem;
+text-transform: uppercase;
+font-family: futura-pt, sans-serif;
+}
+
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  /*width: 180px;*/ /*este width era el problema en el nav*/
+}
+
+.purchase-button {
+  /* Estilos específicos para el botón de Purchase */
+  background-color: #b429ff; 
+  color:#04ff00; /* Color del texto */
+  padding: 12px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  /*transition: transform 0.5s ease;*/
+}
+
+ .purchase-button:hover {
+  background: rgb(0, 255, 214);
+  transform: scale(1.1);
+  color:blue;
+  font-weight: 700;
+  transition: transform 0.5s ease;
+ }
+
+  /*Footer MOVIL (tickets)*/
+
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+  margin:80px 0;
+  font-size: 0.9rem;
+}
+
+.footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.0rem;
+  padding: 0px;
+}
+
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 10px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+.footer1 p:hover {
+  color: #ffcc00; 
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 1.0rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+ footer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 100px auto;
+  padding: 5px;
+}
+
+.image img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+footer img {                  
+  margin-bottom: 10px; 
+}
+                /* SECOND PAGE */
+
+          /* Mobile 2nd page (TICKETS) */
+
+  /*Nav section (tickets movil) */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    background-color: transparent;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    max-width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+  }
+
+  nav {
+    padding-top: 45px;
+    text-align: right;
+   }
+
+.toggle i {
+    color: rgb(0, 0, 0);
+    font-size:2.0rem;
+    margin: 20px 30px 30px 0;
+    background-color: rgb(255, 255, 255); 
+} 
+
+.toggle {
+  background-color: transparent;
+}
+  
+.login-anchor {
+    display: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+
+nav ul li {
+    font-size:1.2rem;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    text-align: center;
+    margin-right: 30px;
+    padding: 8px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color 0.3s ease; 
+  }
+
+  li {
+    display: list-item;
+  }
+
+    li:hover {
+    color: #ffcc00; 
+  }
+
+.login-anchor{ 
+    margin-top: 10px;
+    visibility: hidden;
+}  
+   
+
+nav li a {
+    text-decoration: none;
+    display: inline-block; 
+    text-decoration: none; /***todo esto pertenece al boton del menu login**/
+}
+
+.show-items {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-bottom: 10px;
+     /*width: 180px;*/ /*este width era el problema en el nav*/
+ }
+
+ .log-in {
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  transition: transform 0.5s ease;
+ }
+
+ .log-in:hover {
+  background: #b429ff;
+  transform: scale(1.1);
+ }
+
+  /*Hero section (video) (tickets movil) */
+
+ .banner-video {
+  width: 100%;
+  height: 300px;
+  object-fit:fill;
+  object-fit: cover;
+}
+
+.videohero {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+  /*  Content section (tickets movil) */
+
+.date h4 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 6.5rem; /* antes 5.5rem*/
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 1, 243);
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.date h5 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 4rem; /* antes 3rem*/
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(255, 1, 243);
+  margin-top: -120px;
+}
+
+.date h6 {
+  font-size: 4rem;
+  margin-top: -50px;
+}
+
+  /* call to action section (tickets movil) */
+
+table {
+	border: 2px solid yellow;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    overflow:hidden;
+    margin:auto;
+    width: 80%;
+    /*Estilos para tabla responsiva*/
+    max-width: 100%;
+    display: block;
+}
+
+
+  /*  Footer  (tickets y home page movil) */
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  margin:80px 0;
+  }
+  
+
+.footer1 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.5rem;
+  padding: 30px; /*antes 150*/
+  padding-bottom: 45px; /*antes 45px*/
+  margin-bottom: -83px; /*antes 80px*/
+}
+
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 40px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+.footer1 p:hover {
+  color: #ffcc00; 
+}
+
+.container2 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:rgb(146, 100, 204);
+  font-size: 1.8rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 110%;
+  padding: 15px;
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 1.2rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+ footer img {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+              /* 2nd page (TICKETS) - desktop*/ 
+      
+      /* Large devices (desktop, 1024px and up) */
+      
+      @media only screen and (min-width: 900px) {
+                       /* home page */
+
+        /* Nav section (tickets) */
+
+        nav .toggle {
+            display: none;
+        }
+
+        .navigation-elements ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        .show-items li {
+            margin-right: 60px; 
+        }
+
+        nav {
+          padding-top: 45px;
+          text-align: right;
+          display: inline-flex;
+        }
+
+        /* Hero section (tickets) */  
+
+        .colors_mobile {
+          display: none;
+        }
+
+        .colors_desktop {
+          display: block;
+        }
+
+        .hero h3 {
+          font-size: 2.5rem; 
+          margin-top: -300px;
+        }
+  
+    .hero h1 {
+      font-size: 3.9rem; 
+      line-height: 0.95;
+    }
+  
+    .hero a {
+      font-size: 1.5rem;
+    }
+
+     /* Content section (tickets) */
+
+    .content {
+      flex-direction:row;
+      align-items: center; 
+    }
+
+    .Tickets1,
+    .Tickets2,
+    .Tickets3,
+    .Tickets4 {
+      flex: 1;
+      max-width: 45%; 
+    }
+
+    .pass-content{
+      width: 1170px;
+      margin: auto;
+      display: flex;
+      height: 300px;
+    }
+
+
+    .title1,
+    .title2,
+    .title3,
+    .title4{
+      font-size: 15px;
+    }
+    .pass1,
+    .pass2,
+    .pass3{
+      margin-right: 10px;
+    }
+
+     /* Call to acction section (tickets) */
+
+.accion h5 {
+    font-size: 1.8rem;
+    padding-top: 150px;
+ }
+
+ .accion p {
+    font-size: 3.2rem;
+    padding-top: 90px;
+  }
+
+    .accion a {
+    font-size: 1.6rem;
+  }
+
+    /* footer desktop (tickets) */
+    
+     /* Footer desktop (camping & home page & tickets) copia */
+
+    .footer1 {
+      font-family: Poppins,sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      color:#ffffff;
+      font-size: 1.5rem;
+      padding: 30px; 
+      padding-bottom: 45px; 
+      margin-bottom: -90px; 
+    }
+    
+    .footer1 p {
+      flex: 1 0 auto;
+      margin: 800px;
+      text-align: center;
+      transition: color 0.3s ease; 
+    }
+    
+     .footer-below {
+      border-top: 1px solid #C2D1D9;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;;
+      font-size: 1.2rem;
+      color: #A1AEB7;
+      text-align: center;
+     }
+    
+     footer img {
+      width: 100%; 
+      max-width: 100%;
+    }
+    
+    }
+  
+                      /* 3TH PAGE */
+
+               /* MOVIL 3ND PAGE (CAMPING) */
+
+  /* Content (Mobile) camping */
+
+
+.feature h2{
+  font-size: 4.5rem;
+  color:rgb(114, 212, 74);
+  font-weight: 800;
+}
+
+h2 {
+  justify-content: center;
+  display: flex;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color:rgb(44, 211, 198);
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+.Campi {   /* texto paragraph y titulos */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:#ffffff;
+  margin-top: -70px;
+  margin-left: 5px;
+  margin-right: 7px;
+}
+
+.camp {
+  margin-top: 50px;
+}
+
+.camping-images img {
+  width: 705px;
+  height: auto; 
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.features-row{ 
+  margin: 120px 0 120px 20px;
+}
+
+.camping-images, 
+.iustracion {
+  display: block;
+ }
+
+ .camping-images,
+ .concert {
+  display: none;
+ }
+
+ .feature-boxes-with-border p {
+  width: 97%;  
+}
+
+.FestivalMap img {
+  width: 110%;
+  height: auto;
+  margin-left:-12px;
+}
+
+.FestivalMap {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+ }
+
+  /* Call to action (Mobile) camping */
+
+.accion {  /*por esto no quedaba el diseño resposive*/
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 0px;
+ }
+
+.accion h5 {
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-a1aeb7);
+    text-align: center;
+    letter-spacing: 0px;
+    max-width: 100%;
+    margin: 26px;  
+    color: #b429ff;;
+    opacity: 1;
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url();
+    font-weight: 800;
+ }
+
+ .accion p {
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem; 
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0 42.5px 75px 42.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 20px;
+  }
+
+    .accion a {
+    max-width: 100%;
+    display:inline-block;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: rgb(255, 255, 1);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin:20px;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition: transform 0.5s ease;
+  }
+  
+   a:hover {
+    background: #b429ff;
+    transform: scale(1.1);
+    color:aqua;
+   }
+
+
+   /*  Footer section (Mobile) camping */
+
+ p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.0rem;
+}
+
+.footer1 {
+  display: inline; 
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+                /* DESKTOP 3ND PAGE (CAMPING) */
+
+  /* content desktop (camping) */
+
+/* Large devices (desktop, 1024px and up) */
+@media screen and (min-width: 768px) {  
+
+  .feature h2 {
+    font-size: 6.0rem;
+    color:rgb(0, 174, 153);
+    font-weight: 800;
+  }
+
+h2 {
+  justify-content: center;
+  display: flex;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color:rgb(114, 212, 74);
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+}
+
+p {
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 25px;
+  font-size: 1.35rem;
+}
+
+.Campi {   /* texto paragraph y titulos */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:#A1AEB7;
+  margin-top: -70px;
+  margin-left: 80px; 
+}
+
+.camp {
+  margin-top: 50px;
+}
+
+.camping-images img {
+  width: 705px;
+  height: auto; 
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.features-row{ 
+  margin: 120px 0 120px 20px;
+}
+
+.features-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-left: -30px;
+}
+
+.camping-images, 
+.iustracion {
+  display: block;
+ }
+
+ .camping-images,
+ .concert {
+  display: none;
+ }
+
+ .FestivalMap {
+  display: flex;
+  width: 80%;
+  align-items: center;
+ }
+
+  /* action desktop (camping) */
+
+.accion h5 {
+  font-size: 2.7rem;
+  margin: 26px;
+  color:#b429ff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+}
+
+.accion p {
+  font-size: 1.9rem;
+  padding-top: 20px;
+}
+
+  /* Footer desktop (camping & home page) */
+
+.footer1 {
+  font-family: Poppins,sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  font-size: 1.5rem;
+  padding: 30px; 
+  padding-bottom: 45px; 
+  margin-bottom: -90px; 
+}
+
+.footer1 p {
+  flex: 1 0 auto;
+  margin: 40px;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+
+ .footer-below {
+  border-top: 1px solid #C2D1D9;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 1.2rem;
+  color: #A1AEB7;
+  text-align: center;
+ }
+
+
+}
+
+
+ /* contact Us */
+
+
+.contact p {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;;
+  font-size: 2.2rem;
+  color: rgb(114, 212, 74);
+  font-weight: 900;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: 'Bungee',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 5.0rem;
+}
+
+.contact {  /* AQUI ME QUEDE*/
+  background: transparent;
+}
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display:inline;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+          /* contact us (desktop)*/
+
+/* Large devices (desktop, 1024px and up) */
+@media screen and (max-width: 1024px) {  
+
+  .contact p {
+    font-size: 3.0rem;
+    color:#45a049;
+  }
+
+}
+        
+/* revisar*/
+       
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 16px;
+  width: 350px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #f4ee42;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Poppins, sans-serif;
+  color: black;
+}
+
+button:hover {
+  background-color: #a73cd8;
+  color:cyan;
+}
