@@ -271,7 +271,7 @@ nav li a {
     font-size: 1.0rem;
     padding: 10px 80px;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: -10px;
+    padding-bottom: 0px;
   }
 
   .Tickets2 p {
@@ -547,11 +547,6 @@ nav li a {
     color:cyan;
   }
 
-      display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-left: -30px;
-
 
       /* Desktop (home page) */  
       
@@ -776,7 +771,7 @@ nav li a {
   text-transform: uppercase;
   color:rgb(114, 212, 74);
   margin-top: 20px;
-  padding: -5px;
+  padding: 0px;
 }
 
 .date h5 {
@@ -822,6 +817,7 @@ table tr td {
   border-bottom: 2px solid #ffcc00;
   padding: 10px; /* Ajusta según tus necesidades */
   color: #FFFFFF;
+  text-align: center;
 }
 
 .button a {
@@ -908,7 +904,6 @@ font-family: futura-pt, sans-serif;
   font-size: 1.0rem;
   color: #A1AEB7;
   text-align: center;
-  font-weight: 900px;
  }
 
  footer img {
@@ -1054,7 +1049,7 @@ nav li a {
   text-transform: uppercase;
   color:rgb(255, 1, 243);
   margin-top: 20px;
-  padding: -5px;
+  padding: 0px;
 }
 
 .date h5 {
